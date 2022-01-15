@@ -108,7 +108,7 @@ function Header(props) {
                 >
                   <ul className="test1">
                     <Dropdown.Item href="#/Hackathon">Hackathon</Dropdown.Item>
-                    <Dropdown.Item href="#">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#/Smartdevices"> Smart devices </Dropdown.Item>
                     <Dropdown.Item href="#">Something else</Dropdown.Item>
                     <Dropdown.Item href="#">Something else</Dropdown.Item>
                     <Dropdown.Item href="#">Something else</Dropdown.Item>

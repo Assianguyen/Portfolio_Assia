@@ -4,29 +4,18 @@ import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
 import { greeting, contactPageData } from "../../portfolio";
 import { style } from "glamor";
-import { useHistory } from "react-router-dom";
-import "./Hackathon.css"
+import "./smartdevices.css"
 import { link } from "glamor";
 import { NavBar, Nav, NavItem } from 'react-bootstrap';
 
-import "../../components/videoHackathon/videoHackathon"
 import TableHackathon from "../../components/tableAnalysis/tableHackathon";
 import KetiSlider from "../../components/KetiSlider/ketiSlider";
 import HackathonSlider from "../../components/hackathonSlide/hackathonSlider";
 
 
 
-function Hackathon(props) {
+function Smartdevices(props) {
     const theme = props.theme;
-
-    const history = useHistory();
-
-    const styles = style({
-        backgroundColor: `${theme.accentBright}`,
-        ":hover": {
-            boxShadow: `0 5px 15px ${theme.accentBright}`,
-        },
-    });
     return (
         <div>
             <Header theme={props.theme} setTheme={props.setTheme} />
@@ -35,15 +24,15 @@ function Hackathon(props) {
                     <Fade bottom duration={2000} distance="20px">
                         <div className="course-heading-img-div">
                             <img
-                                className="om2m-pic"
-                                src={require(`../../assests/images/growing-plant.png`)}
+                                className="smartdevice-pic"
+                                src={require(`../../assests/images/SD.JPG`)}
                                 alt=""
-                                style={{ width: "40%" }}
+                                style={{ width: "20%" }}
                             />
                         </div>
 
                         <h1 className="course-header" style={{ color: theme.text }}>
-                            Hackathon
+                            Smart Devices
                         </h1>
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Descriptive part
@@ -53,16 +42,13 @@ function Hackathon(props) {
                         <h1 className="course-text" style={{ color: theme.text }}>
                             <br />
                             <h1 className="course-subtitle">Context and background</h1>
-                            The Hackathon is part of the Analysis and data processing, business applications module even though it had more to do with the Middleware & Service module.<br />
-                            The 2021 Hackathon took place from 30/09/2021 to 15/11/2021 and was organized and managed by <b>KETI</b> (Korea Eletronics Technology Institute) and <b>ETSI</b> (European Telecommunication Standards Institute).
-                            This international competition aimed to promote the OM2M standard. Divided in group of 5 students from different backgrounds, our goal was to develop an IoT solution to help citizen by solving social and/or environmental issues.
-                            The solution had to be build with any of the oneM2M platforms.<br />
-                            Our group was composed of 2 students from the Electronic department,
-                            1 from the Physics department and 1 from Computer Science.
-                            The idea came to us when we thought of a solution that could help reduce the waste of natural ressources. From that, we thought naturally about the water used in agriculture and gardens.
-                            Our vision was to design a system that would reduce water consumption and manage the growth of plants or even crops in the long run. <br />
-                            That is how we settled on the following solution: an automated watering system that would allow to monitor the surroundings and the state of a plant to predict and activate its watering.<br />
-                            To do so, we used several sensors and one actuator to switch on the watering automatically or on command.
+
+
+                            The Smart Devices course or module gathers five classes that go over the different steps to produce a smart sensor, in our case a gas detector.
+                            First, we had theoretical classes about sensors in general and optical sensors, as an introduction or reminder to the concepts of real-life physical values measurement. Then, we tackled the actual sensor creation at the AIME lab, and all the post treatment of the measurement produced.
+
+                            You can find a quick summary of the courses content in the adjacent table. The next subsection will focus on the most relevent experiences in more detail: the nano-particle deposition to create the sensor, and the MOSH mini-project.
+
 
 
                         </h1>
@@ -113,20 +99,9 @@ function Hackathon(props) {
                             The system could also operate in autonomy: if the humidity was too low, the watering was automatically turned on. <br />
                             We also monitored with an ultrasound sensor the distance variation with the plant to determine if it was growing healthy and send on the user interface a warning otherwise. <br />
                             We were able to display on graphs the real-time data of every sensor as well as data such as the weather forecasting, which could help the user anticipate when of if the plants need watering.
-                            {/* We presented the setup and all the features of our IoT solution in the following video: */}
+                            We presented the setup and all the features of our IoT solution in the following video:
                             <br /><br /><br />
                         </h1>
-                        <div className="portfolio-hackster-btn-div">
-                            <button
-                                {...styles}
-                                className="button-hackster"
-                                onClick={() => {
-                                    history.push("/CV");
-                                }}
-                            >
-                                Hackster.io 
-                            </button>
-                        </div>
                         <HackathonSlider />
                         <br /><br />
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
@@ -202,4 +177,4 @@ function Hackathon(props) {
         </div>
     );
 }
-export default Hackathon;
+export default Smartdevices;

@@ -9,6 +9,8 @@ import Projects from "../pages/projects/Projects";
 import Test from "../pages/Test/test_page";
 import { settings } from "../portfolio";
 import Hackathon from "../pages/hackathon/Hackathon";
+import Test_page from "../pages/Test/test_page";
+import Smartdevices from "../pages/smartdevices/smartdevices";
 
 export default function Main(propss) {
   if (settings.isSplash) {
@@ -173,6 +175,17 @@ export default function Main(propss) {
               path="/hackathon"
               render={(props) => (
                 <Hackathon
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+
+            <Route
+              path="/smartdevices"
+              render={(props) => (
+                <Smartdevices
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
