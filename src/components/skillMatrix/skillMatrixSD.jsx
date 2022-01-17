@@ -67,7 +67,7 @@ function SkillMatrixSD(props) {
                     </tr>
                     <tr>
                         <th>Be able to design a shield to accommodate the gas sensor</th>
-                        <th>IT, ST</th>
+                        <th>IT, PP</th>
                         <th>4</th>
                         <th>4</th>
                     </tr>

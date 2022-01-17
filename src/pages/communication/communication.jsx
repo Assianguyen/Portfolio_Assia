@@ -48,7 +48,7 @@ function Communication(props) {
                             The Communication course is divided in five sub-courses that revolve around the Internet of Things field.
                             It is a really compact module involving many topics such as wireless communication protocol,
                             software-defined network, energy for connected objects, and even security. They all fall under the umbrella of
-                            systems of communicatio working towards networks of the future. Here is a table summarizing the courses of this module and their
+                            systems of communication working towards networks of the future. Here is a table summarizing the courses of this module and their
                             content.
                             I will describe, in the next subsection the most relevent experiences in these courses.
 

@@ -445,10 +445,10 @@ const certifications = {
 
 // Experience Page
 const experience = {
-  title: "Internship",
-  subtitle: "Conception & Implementation of tools for a lithium battery",
+  title: "Internships",
+  subtitle: "",
   description:
-    "In this section I have uploaded the poster for my fourth year internship in a start up called Elements.",
+    "In this section I have uploaded the poster for my fourth year internship in a start up called Elements. I have also mentionned my current apprenticeship, at the automotive supplier, Vitesco.",
   header_image_path: "experience.svg",
   sections: [
     // {

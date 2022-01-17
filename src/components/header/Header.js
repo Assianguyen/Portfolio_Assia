@@ -144,10 +144,10 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Internship
+                Internships
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className="projects"
                 to="/projects"
@@ -157,7 +157,7 @@ function Header(props) {
               >
                 Projects
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 className="cv"
