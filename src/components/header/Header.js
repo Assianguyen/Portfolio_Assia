@@ -109,8 +109,8 @@ function Header(props) {
                     <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
                     <Dropdown.Item href="#/communication">Communication</Dropdown.Item>                    
                     <Dropdown.Item href="#">Middleware and Service</Dropdown.Item>                    
-                    <Dropdown.Item href="#">Analysis and data processing</Dropdown.Item>
-                    <Dropdown.Item href="#/Hackathon/#D-hack">Hackathon</Dropdown.Item>
+                    <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
+                    <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
                     <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
                     <Dropdown.Item href="#">Innovation and humanity</Dropdown.Item>
                   </ul>
@@ -127,9 +127,9 @@ function Header(props) {
                   <ul className="test1">
                     <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
                     <Dropdown.Item href="#/communication">Communication</Dropdown.Item>                    
-                    <Dropdown.Item href="#">Middleware and Service</Dropdown.Item>                    
-                    <Dropdown.Item href="#">Analysis and data processing</Dropdown.Item>
-                    <Dropdown.Item href="#/Hackathon/#D-hack">Hackathon</Dropdown.Item>
+                    <Dropdown.Item href="#/data">Middleware and Service</Dropdown.Item>                    
+                    <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
+                    <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
                     <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
                     <Dropdown.Item href="#">Innovation and humanity</Dropdown.Item>
                   </ul>

@@ -10,9 +10,10 @@ import Test from "../pages/Test/test_page";
 import { settings } from "../portfolio";
 import Hackathon from "../pages/hackathon/Hackathon";
 import Test_page from "../pages/Test/test_page";
-import Smartdevices from "../pages/smartdevices/smartdevices";
-import InnovativeProject from "../pages/innovativeProject/innovativeProject"
-import Communication from "../pages/communication/communication";
+import Smartdevices from "../pages/smartdevices/Smartdevices";
+import InnovativeProject from "../pages/innovativeProject/InnovativeProject"
+import Communication from "../pages/communication/Communication";
+import BigData from "../pages/bigData/BigData";
 
 export default function Main(propss) {
   if (settings.isSplash) {
@@ -209,6 +210,16 @@ export default function Main(propss) {
               path="/communication"
               render={(props) => (
                 <Communication
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+            <Route
+              path="/data"
+              render={(props) => (
+                <BigData
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}

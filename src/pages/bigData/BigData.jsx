@@ -14,7 +14,7 @@ import SkillMatrixSD from "../../components/skillMatrix/skillMatrixSD"
 
 
 
-function Smartdevices(props) {
+function BigData(props) {
     const theme = props.theme;
     const styles = style({
         backgroundColor: `${theme.accentBright}`,
@@ -33,16 +33,17 @@ function Smartdevices(props) {
                     <Fade bottom duration={2000} distance="20px">
                         <div className="course-heading-img-div">
                             <img
-                                className="smartdevice-pic"
-                                src={require(`../../assests/images/SD.JPG`)}
+                                className="data-pic"
+                                src={require(`../../assests/images/cluster.jpeg`)}
                                 alt=""
-                                style={{ width: "20%" }}
+                                style={{ width: "35%" }}
                             />
                         </div>
 
                         <h1 className="course-header" style={{ color: theme.text }}>
-                            Smart Devices
+                            Analysis and data processing
                         </h1>
+                        <br/>
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Descriptive part
                         </h1>
@@ -235,8 +236,8 @@ function Smartdevices(props) {
                         </h5>
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Analytic part
-                        </h1>          
-                        <br />              
+                        </h1>
+                        <br />
                         <h1 className="course-subtitle"> Skills analysis </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
@@ -314,4 +315,4 @@ function Smartdevices(props) {
         </div>
     );
 }
-export default Smartdevices;
+export default BigData;

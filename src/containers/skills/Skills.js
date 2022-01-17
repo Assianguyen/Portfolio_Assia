@@ -67,12 +67,12 @@ export default function Skills(props) {
               </NavLink>
               page
             </li>
-            <br />
+            <br/>
             <li>
               The
               <NavLink
-                className="descriptive"
-                to="/CV"
+                className="xp"
+                to="/Internship"
                 tag={Link}
                 style={{
                   textDecoration: "none",
@@ -81,9 +81,15 @@ export default function Skills(props) {
                   fontWeight: "bold",
                 }}
               >
-                descriptive part
+                internship
               </NavLink>
-              of each module
+              page, presenting my main experiences
+
+            </li>
+            <br />
+            <li>
+              The <b>descriptive part</b> of each module
+
             </li>
             <br />
             <li>
@@ -94,9 +100,8 @@ export default function Skills(props) {
               the <b>analytic part</b> of each module
             </li>
             <br />
-            By selecting in the header either the descriptive, technical or
-            analytic part you can choose any course or UF. You can thus navigate
-            the portfolio by either course o
+            By selecting in the header the descriptive, technical or
+            analytic part you can navigate any course and their specific part .
           </h1>
           <br />
           <h1 className="skills-title" style={{ color: theme.accentColor }}>
@@ -113,7 +118,7 @@ export default function Skills(props) {
             You can find below a table that summarizes the different courses of
             this program.
           </h1>
-          <TableISS id='tab'/>
+          <TableISS id='tab' />
         </Fade>
       </div>
       {/* <SkillSection theme={theme} /> */}

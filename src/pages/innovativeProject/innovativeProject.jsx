@@ -83,14 +83,14 @@ function InnovativeProject(props) {
                                         className="simpleRTKkit-pic d-block mx-auto"
                                         src={require(`../../assests/images/rtk2b.png`)}
                                         alt=""
-                                        style={{ width: "65%" }}
+                                        style={{ width: "75%" }}
                                     />
                                     <h6 className='text-center'><i>simpleRTK2B LR kit from ArduSimple</i></h6>
                                     <img
                                         className="payload-pic d-block mx-auto"
                                         src={require(`../../assests/images/rtk_payload.PNG`)}
                                         alt=""
-                                        style={{ width: "70%" }}
+                                        style={{ width: "90%" }}
                                     />
                                     <h6 className='d-flex text-center'><i>3D view of the expected payload sat attached to the balloon</i></h6>
                                 </Col>

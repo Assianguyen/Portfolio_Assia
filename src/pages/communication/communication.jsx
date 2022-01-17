@@ -7,8 +7,8 @@ import { style } from "glamor";
 import { link } from "glamor";
 import { NavBar, Nav, NavItem, Button, Modal, Row, Col } from 'react-bootstrap';
 
-import SkillMatrixSD from "../../components/skillMatrix/skillMatrixSD"
 import Commcourses from "../../components/skillMatrix/commCourses"
+import SkillMatrixComm from "../../components/skillMatrix/skillMatrixComm"
 
 
 
@@ -47,11 +47,10 @@ function Communication(props) {
                             <br /><br />
                             The Communication course is divided in five sub-courses that revolve around the Internet of Things field.
                             It is a really compact module involving many topics such as wireless communication protocol,
-                            software-defined network, energy for connected objects, and even security. They all fall under the umbrella of "Communication"
-                            working towards networks of the future. Here is a table summarizing the courses of this module and their
+                            software-defined network, energy for connected objects, and even security. They all fall under the umbrella of
+                            systems of communicatio working towards networks of the future. Here is a table summarizing the courses of this module and their
                             content.
-                            The next subsection will focus on one of the most relevent experiences in more detail:
-                            the Software Defined Radio (SDR) hands-on we did during the labs.
+                            I will describe, in the next subsection the most relevent experiences in these courses.
 
                             <br /><br />
                         </h1>
@@ -172,6 +171,7 @@ function Communication(props) {
                         <br /><br />
                         <h1 className="course-subtitle">Protocols for connected objects</h1>
                         <h5 className="course-text2">
+                            <br />
                             This class was quite challenging for me since I was not initially comfortable with the routing and MAC
                             layer notions. When working on the Nb-IoT report and presentation, I made a lot of ressearch online to assimilate
                             how it worked. There were thankfully a lot of resources. However, as we were one of the first group to present, we quickly
@@ -183,6 +183,7 @@ function Communication(props) {
                         <br />
                         <h1 className="course-subtitle">Software-Defined-Radio</h1>
                         <h5 className="course-text2">
+                            <br />
                             The main challenge I faced for this practical work was time management. I had to work outside of the hours
                             allocated for this class to progress. I was not able to complete the entirety of the lab.
                             However, this practical work allowed me to learn abot GNU-radio companion which is a very useful tool in
@@ -193,10 +194,11 @@ function Communication(props) {
 
                         <h1 className="course-subtitle">Emerging networks </h1>
                         <h5 className="course-text2">
+                            <br />
                             This course was challenging because it used very complex concepts in my opinion. Even though I did
                             network courses in my previous years, I did not feel as well equiped as I would have liked.
                             During the practical works, I was able to pair with student computer science, which was great for me since
-                            they were familiar with that field, and were here help me when I had difficulties or questions.<br />
+                            they were familiar with that field, and were here help me when I had difficulties or questions.<br /><br />
                             <h1 className="course-subtitle">Security for network of connected objects</h1>
                             <br />
                             This is the course where I had the less experience in. However, I felt like the classes were actually accessible for
@@ -211,14 +213,22 @@ function Communication(props) {
                         <h1 className="course-subtitle"> Skills analysis </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
-                            As I expressed in the previous sections, the Communication module was really dense. It contained a lot of classes, with a huge amount of information and assignments. The skills in the matrix are separated into two sub-sections, and the first one of the two is heavily loaded, which represents well the amount that was presented and needed to be acquired in the few weeks that this module took place in.
+                            In retrospect, this module is the one where I struggled the most, as I felt I sometimes lacked
+                            some knowledge, notably in SDR and Security. I felt like it was more adapted to students with a computer science background. 
+                            Still, I think I pushed through and was able to acquire most of the skills linked to these courses. 
+                            I relied a lot on learning with peers, because I was surrounded by students with experience in these fields.
+                            I felt the most comfortable in the course about Energy for connected objects, since the 4rth year in embedded systems provided the same training.
+                            I was thus able to put to use the skills I had acquired last year.  
+                            Regarding the Protocol for connected Objects course, we contributed with our presentation to building the course.
+                            I think being directly confronted with my peers and professor really enabled me to pinpoint what i had not understood or 
+                            assimilated. Even though the security course was hard to apprehend theoretically, the practical work
+                            really put into practice what we learned in lectures in an interractive and easy-to-follow way.
+                            In conclusion, I felt that in general I had to attend the practice labs to be able to grasp the notions and put them in context.
+                            <br/><br/>
 
-                            For the Protocols of communication classes, I feel like I reached the expected level, but did not have enough time to go over it and reach a comfortable level in all subjects presented. Having already had quite a lot of network classes in third and fourth year at INSA, I feel like my previous training prepared me quite well to the classes. I feel like I really understand the current state of IoT standards, the direction where they are going and how the domain is going to evolve in the upcoming years. I felt a little bit less at ease with purely techincal skills, wether they are energy constraints, or complex RF reception techniques. However, I think that almost all students except those who followed Network and Communication in fourth year were in the same situation than I was in, so a lot of peer exchance made it possible for everyone to understand the main concepts approached.
-
-                            As for the Security for IoT class, it focused on a subject that I really like and research on my own personal free-time, so I had no real difficulty understanding the main concepts. Also, I think that the class, with only 6 lectures staying at a relatively surface level, did not go as far as it was maybe intended, so it can be harder tu judge the skills acquired during the lectures. Overall, I think that the initial training, along with my previous knowledge, helped me reach the required level.
-
+                            
                         </h1>
-                        <SkillMatrixSD />
+                        <SkillMatrixComm />
                         <Button className='button-skills' onClick={handleShow}>
                             How to read the skills matrix
                         </Button>
@@ -254,14 +264,15 @@ function Communication(props) {
                         <h1 className="course-subtitle"> General feedback </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
-                            This course was done at the very end of the semester
-                            confronter à ses erruers
-                            In retrospect, this module is the one where I struggled the most, as I felt it was more adapted
-                            to students with a computer science background.
-                            LE plus oriente computer Science
-                            useful for my apprenticeship
-
-
+                            The Communication course was complex because it condensed a lot of new concepts and courses that seemed,
+                            at first, to have little in common. However, by the end of the semester I realized they were more connected than 
+                            I initially thought and were essential notions to take into account when designing an IoT system. 
+                            I appreciated the effort to integrate the security course in the Innovative project.
+                            Since a portion of this module was done at the end of the semester, like the security and energy labs, we were a bit
+                            rushed and we were not in the best conditions to fully commit ourselves to this training. 
+                            This knowledge and training will be extremely useful to me in the near future since my apprenticeship revolves 
+                            around the devopment of wireless protocols, especially the Bluetooth Low-Energy protocol.
+                            This is why I made sure to invest as much energy as I could during this module.
                         </h1>
                         <Footer theme={props.theme} />
                     </Fade>
