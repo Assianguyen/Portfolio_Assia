@@ -27,9 +27,8 @@ function Header(props) {
     outline: "none",
     transition: "all 0.2s ease-in-out",
     ":hover": {
-      boxShadow: `0 3px 8px ${
-        props.theme.name === "light" ? "#F7D774" : "#646464"
-      }`,
+      boxShadow: `0 3px 8px ${props.theme.name === "light" ? "#F7D774" : "#646464"
+        }`,
     },
   });
 
@@ -107,13 +106,32 @@ function Header(props) {
                   title="Descriptive part"
                 >
                   <ul className="test1">
-                    <Dropdown.Item href="#/Hackathon">Hackathon</Dropdown.Item>
-                    <Dropdown.Item href="#/Smartdevices"> Smart devices </Dropdown.Item>
-                    <Dropdown.Item href="#">Something else</Dropdown.Item>
-                    <Dropdown.Item href="#">Something else</Dropdown.Item>
-                    <Dropdown.Item href="#">Something else</Dropdown.Item>
-                    <Dropdown.Item href="#">Something else</Dropdown.Item>
-                    <Dropdown.Item href="#">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
+                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>                    
+                    <Dropdown.Item href="#">Middleware and Service</Dropdown.Item>                    
+                    <Dropdown.Item href="#">Analysis and data processing</Dropdown.Item>
+                    <Dropdown.Item href="#/Hackathon/#D-hack">Hackathon</Dropdown.Item>
+                    <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
+                    <Dropdown.Item href="#">Innovation and humanity</Dropdown.Item>
+                  </ul>
+                </DropdownButton>
+              </div>
+            </li>
+            <li>
+              <div className="nav-item dropdown">
+                <DropdownButton
+                  className="tech"
+                  id="Technical-button"
+                  title="Technical part"
+                >
+                  <ul className="test1">
+                    <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
+                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>                    
+                    <Dropdown.Item href="#">Middleware and Service</Dropdown.Item>                    
+                    <Dropdown.Item href="#">Analysis and data processing</Dropdown.Item>
+                    <Dropdown.Item href="#/Hackathon/#D-hack">Hackathon</Dropdown.Item>
+                    <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
+                    <Dropdown.Item href="#">Innovation and humanity</Dropdown.Item>
                   </ul>
                 </DropdownButton>
               </div>
@@ -121,12 +139,12 @@ function Header(props) {
             <li>
               <NavLink
                 className="xp"
-                to="/experience"
+                to="/internship"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Experience
+                Internship
               </NavLink>
             </li>
             <li>

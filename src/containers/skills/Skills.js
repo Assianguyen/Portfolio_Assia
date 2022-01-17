@@ -113,7 +113,7 @@ export default function Skills(props) {
             You can find below a table that summarizes the different courses of
             this program.
           </h1>
-          <TableISS />
+          <TableISS id='tab'/>
         </Fade>
       </div>
       {/* <SkillSection theme={theme} /> */}

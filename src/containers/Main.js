@@ -11,6 +11,8 @@ import { settings } from "../portfolio";
 import Hackathon from "../pages/hackathon/Hackathon";
 import Test_page from "../pages/Test/test_page";
 import Smartdevices from "../pages/smartdevices/smartdevices";
+import InnovativeProject from "../pages/innovativeProject/innovativeProject"
+import Communication from "../pages/communication/communication";
 
 export default function Main(propss) {
   if (settings.isSplash) {
@@ -40,7 +42,7 @@ export default function Main(propss) {
               )}
             />
             <Route
-              path="/experience"
+              path="/internship"
               exact
               render={(props) => (
                 <Experience
@@ -50,7 +52,7 @@ export default function Main(propss) {
                 />
               )}
             />
-            <Route
+            {/* <Route
               path="/education"
               render={(props) => (
                 <Education
@@ -59,7 +61,7 @@ export default function Main(propss) {
                   setTheme={propss.setTheme}
                 />
               )}
-            />
+            /> */}
             <Route
               path="/CV"
               render={(props) => (
@@ -131,7 +133,7 @@ export default function Main(propss) {
               )}
             />
             <Route
-              path="/experience"
+              path="/internship"
               exact
               render={(props) => (
                 <Experience
@@ -186,6 +188,27 @@ export default function Main(propss) {
               path="/smartdevices"
               render={(props) => (
                 <Smartdevices
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+            <Route
+              path="/innovativeproject"
+              render={(props) => (
+                <InnovativeProject
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+
+            <Route
+              path="/communication"
+              render={(props) => (
+                <Communication
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}

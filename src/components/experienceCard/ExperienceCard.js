@@ -1,9 +1,16 @@
 import React from "react";
 import "./ExperienceCard.css";
+import { style } from "glamor";
 
 function ExperienceCard(props) {
   const experience = props.experience;
   const theme = props.theme;
+  const styles = style({
+    backgroundColor: `${theme.accentBright}`,
+    ":hover": {
+      boxShadow: `0 5px 15px ${theme.accentBright}`,
+    },
+  });
   return (
     <div
       className="experience-card"
@@ -59,6 +66,15 @@ function ExperienceCard(props) {
         >
           {experience["description"]}
         </p>
+        <div className="portfolio-hackster-btn-div">
+          <button
+            {...styles}
+            className="button-datasheet"
+          >
+
+            <a className='a-hack' href="https://drive.google.com/file/d/1xV0TO79cfj8xWf8bBZrSrq31IAraYoSd/view?usp=sharing" target='Blank_' nonunderlinedhyperlink>View poster</a>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,27 @@
+.table>:not(caption)>*>* {
+  background-color: transparent;
+}
+
+.tabSD{
+  color: #e9ecf5;
+  
+} 
+.tabMatrix{
+  color: #e9ecf5;
+  width: 80%; 
+  margin-left: 123px;
+} 
+
+.table-hover tbody tr:hover{
+  color:#F28D9F !important;
+  /* background-color: beige; */
+
+}
+
+.head{
+  background-color: #e3405f;
+}
+
+.module{
+  background-color: #7a2232 !important;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Fade } from "react-reveal";
@@ -7,13 +7,14 @@ import { style } from "glamor";
 import { useHistory } from "react-router-dom";
 import "./Hackathon.css"
 import { link } from "glamor";
-import { NavBar, Nav, NavItem } from 'react-bootstrap';
+import { NavBar, Nav, NavItem, Button, Modal, Row, Col } from 'react-bootstrap';
+import { Player } from 'video-react';
+import video from '../../assests/video/demo_hackathon_team_haka.mp4';
+import "video-react/dist/video-react.css";
 
-import "../../components/videoHackathon/videoHackathon"
-import TableHackathon from "../../components/tableAnalysis/tableHackathon";
+import SkillMatrixHack from "../../components/skillMatrix/skillMatrixHack";
 import KetiSlider from "../../components/KetiSlider/ketiSlider";
 import HackathonSlider from "../../components/hackathonSlide/hackathonSlider";
-
 
 
 function Hackathon(props) {
@@ -27,6 +28,10 @@ function Hackathon(props) {
             boxShadow: `0 5px 15px ${theme.accentBright}`,
         },
     });
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
+
     return (
         <div>
             <Header theme={props.theme} setTheme={props.setTheme} />
@@ -45,54 +50,55 @@ function Hackathon(props) {
                         <h1 className="course-header" style={{ color: theme.text }}>
                             Hackathon
                         </h1>
-                        <h1 className="course-title" style={{ color: theme.accentColor }}>
+                        <h1 id='D-hack' className="course-title" style={{ color: theme.accentColor }}>
                             Descriptive part
                         </h1>
+                        <Row>
+                            <Col md={7}>
+                                <h5 className="course-text2" style={{ color: theme.text }}>
+                                    <br />
+                                    <h2 className="course-subtitle">Context and background</h2>
+                                    The Hackathon is part of the Analysis and data processing, business applications module even though it had more to do with the Middleware & Service module.<br />
+                                    The 2021 Hackathon took place from 30/09/2021 to 15/11/2021 and was organized and managed by <b>KETI</b> (Korea Eletronics Technology Institute) and <b>ETSI</b> (European Telecommunication Standards Institute).
+                                    This international competition aimed to promote the OM2M standard. Divided in group of 4 or 5 students from different backgrounds, our goal was to develop an IoT solution to help citizen by solving social and/or environmental issues.
+                                    The solution had to be build with any of the oneM2M platforms.<br />
+                                    Our group was composed of 2 students from the Electronic department,
+                                    1 from the Physics department and 1 from Computer Science.
+                                    The idea came to us when we thought of a solution that could help reduce the waste of natural ressources. From that, we thought naturally about the water used in agriculture and gardens.
+                                    Our vision was to design a system that would reduce water consumption and manage the growth of plants or even crops in the long run. <br />
+                                    That is how we settled on the following solution: an automated watering system that would allow to monitor the surroundings and the state of a plant to predict and activate its watering.<br />
+                                    To do so, we used several sensors and one actuator to switch on the watering automatically or on command.
+                                </h5>
+                            </Col>
+                            <Col className="d-flex-column align-items-center" md={5}>
+                                <KetiSlider className='mb-5 mt-5' />
+                                <div className="mt-5">
+                                    <img
+                                        className="d-block mx-auto"
+                                        src={require(`../../assests/images/om2m.png`)}
+                                        alt=""
+                                        style={{ width: "50%" }}
+                                    />
+                                    <div className="">
+                                        <img
+                                            className="d-block mx-auto"
+                                            src={require(`../../assests/images/etsi-logo.svg`)}
+                                            alt=""
+                                            style={{ width: "50%" }}
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <img
+                                            className="d-block mx-auto"
+                                            src={require(`../../assests/images/keti-logo.png`)}
+                                            alt=""
+                                            style={{ width: "45%" }}
+                                        />
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
 
-                        <KetiSlider />
-                        <h1 className="course-text" style={{ color: theme.text }}>
-                            <br />
-                            <h1 className="course-subtitle">Context and background</h1>
-                            The Hackathon is part of the Analysis and data processing, business applications module even though it had more to do with the Middleware & Service module.<br />
-                            The 2021 Hackathon took place from 30/09/2021 to 15/11/2021 and was organized and managed by <b>KETI</b> (Korea Eletronics Technology Institute) and <b>ETSI</b> (European Telecommunication Standards Institute).
-                            This international competition aimed to promote the OM2M standard. Divided in group of 5 students from different backgrounds, our goal was to develop an IoT solution to help citizen by solving social and/or environmental issues.
-                            The solution had to be build with any of the oneM2M platforms.<br />
-                            Our group was composed of 2 students from the Electronic department,
-                            1 from the Physics department and 1 from Computer Science.
-                            The idea came to us when we thought of a solution that could help reduce the waste of natural ressources. From that, we thought naturally about the water used in agriculture and gardens.
-                            Our vision was to design a system that would reduce water consumption and manage the growth of plants or even crops in the long run. <br />
-                            That is how we settled on the following solution: an automated watering system that would allow to monitor the surroundings and the state of a plant to predict and activate its watering.<br />
-                            To do so, we used several sensors and one actuator to switch on the watering automatically or on command.
-
-
-                        </h1>
-
-                        {/* <div className="om2m-img-div">
-                            <img
-                                className="om2m-logo"
-                                src={require(`../../assests/images/om2m.png`)}
-                                alt=""
-                                style={{ width: "20%" }}
-                            />
-                        </div>
-
-                        <div className="om2m-img-div">
-                            <img
-                                className="etsi-logo"
-                                src={require(`../../assests/images/etsi-logo.svg`)}
-                                alt=""
-                                style={{ width: "20%" }}
-                            />
-                        </div>
-
-                        <div className="keti-img-div">
-                            <img
-                                className="keti-logo"
-                                src={require(`../../assests/images/keti_logo.png`)}
-                                alt=""
-                                style={{ width: "15%", marginLeft: "44%", marginTop: "-14%", position: "fixed" }}
-                            />
-                        </div> */}
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
                             <h1 className="course-subtitle">Personal contribution </h1>
@@ -113,34 +119,56 @@ function Hackathon(props) {
                             The system could also operate in autonomy: if the humidity was too low, the watering was automatically turned on. <br />
                             We also monitored with an ultrasound sensor the distance variation with the plant to determine if it was growing healthy and send on the user interface a warning otherwise. <br />
                             We were able to display on graphs the real-time data of every sensor as well as data such as the weather forecasting, which could help the user anticipate when of if the plants need watering.
-                            {/* We presented the setup and all the features of our IoT solution in the following video: */}
-                            <br /><br /><br />
+                            The setup and all the features of our IoT solution in the following video as well as the presentation we did for the Hackathon jury:
+                            <br />
                         </h1>
-                        <div className="portfolio-hackster-btn-div">
-                            <button
-                                {...styles}
-                                className="button-hackster"
-                                onClick={() => {
-                                    history.push("/CV");
-                                }}
-                            >
-                                Hackster.io 
-                            </button>
-                        </div>
-                        <HackathonSlider />
+                        <Row>
+                            <Col className='' md={6}>
+                                <div className="portfolio-hackster-btn-div">
+                                    <button
+                                        {...styles}
+                                        className="button-hackster"
+                                    >
+
+                                        <a className='a-hack' href="https://www.hackster.io/haka/keti-hackathon-smart-crop-monitoring-and-growth-management-877d14" target='Blank_' nonunderlinedhyperlink>Hackster.io</a>
+                                    </button>
+                                </div>
+                                <HackathonSlider />
+                            </Col>
+                            <Col className='d-flex align-items-end' md={6}>
+                                <Player className='vid '>
+                                    <source src={video} />
+                                </Player>
+                            </Col>
+                        </Row>
                         <br /><br />
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Technical part
                         </h1>
+                        <br/><br/>
+                        <Row>
+                            <Col md={7}>
+                                <h1 className="course-text2" style={{ color: theme.text }}>
+                                    First of all, here is a quick summary of our project: <br /> Sensors were wired to an ESP38266 board on the Application Dedicated Node side. This node had to connect and send data via WiFi to the Middle Node or Gateway, which in our case, was a Raspberry Pi.
+                                    After having collected the data, the RaspPi had to send the gathered information to the OM2M platform. The node-red flow deployed on the Infrastructure Node could then send http GET requests to retrieve the sensors data and display it on the dashboard.
+                                    <br /> Since the user could control the system on the interface, the node-red had to be able to send POST requests to the ESP8266 via the OM2M platform to control the water actuator.<br/><br/>
+                                </h1>
+                            </Col>
+                            <Col md={5}>
+                                <img
+                                    className="setup-pic"
+                                    src={require(`../../assests/images/setup_hackathon.jpeg`)}
+                                    alt="Setup of our system"
+                                    style={{ width: "100%" }}
+                                />
+                                <h6 className="text-center !important"> <i>Setup of our IoT system</i></h6>
+                            </Col>
+                        </Row>
                         <h1 className="course-text2" style={{ color: theme.text }}>
-                            First of all, here is a quick summary of our project: <br /> Sensors were wired to an ESP38266 board on the Application Dedicated Node side. This node had to connect and send data via WiFi to the Middle Node or Gateway, which in our case, was a Raspberry Pi.
-                            After having collected the data, the RaspPi had to send the gathered information to the OM2M platform. The node-red flow deployed on the Infrastructure Node could then send http GET requests to retrieve the sensors data and display it on the dashboard.
-                            <br /> Since the user could control the system on the interface, the node-red had to be able to send POST requests to the ESP8266 via the OM2M platform to control the water actuator.<br /><br /><br />
-
                             This project was very challenging technically for me since I had to assimilate a new concept, middleware, and more precisely, OneM2M.
                             Since we had practical work in the Middleware & Services course, I was able
                             to assimilate the main notions of that technology. A lot of documentation and code examples
-                            were available on the internet, which made the coding easier.<br />
+                            were available on the internet, which made the coding easier.
 
                             Since I had been assigned the Arduino code and the handling of the hardware, I was confronted to some difficulties with a few electronic components, in particular the solenoid valve, the water flow sensor and the analog multiplexer.
                             Thankfully, I had experience from previous projects handling the ESP8266 which was the microcontroller we used in this project. <br /> The multiplexer needed soldering, and I was able to do it without major difficulties since I had done extensive soldering during my 2021 summer internship.
@@ -163,15 +191,13 @@ function Hackathon(props) {
                             In conclusion, I was confronted to many problems at every step of the integration of our solution. Overcoming them
                             sometimes proved to be time-consuming. However, it allowed me to be challenged and solve problems on my own since this project was done in full autonomy.
 
-
-                            Too much reesponsability, too little time
-                            Had I been
                         </h1>
                         <br /><br />
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Analytic part
                         </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
+                            <br/><br/>
                             The hackathon, was one of the most demanding projects of the Innovative Smart Systems syllabus. Not only it mobilised new skills and knowledge but the deadline and schedule were extremely tight. <br />
                             First, finding an innovative idea never been done before proved to be difficult. After having chosen our subject, we realized that
                             smart watering systems had been achieved and were even common. We had to add functionalities to our project to increase the added value of our solution.
@@ -191,10 +217,43 @@ function Hackathon(props) {
                             The main lesson I take from this experience is how time management is important. If I could redo this project from the start, I would try to divide the time allocated to each task more efficiently.
                             I would also have taken less time to really begin the project. I think we took too much time discussing our ideas for features instead of trying to deploy the hardware right away. <br />
                             Even though the technical skills I acquired are valuable, I think the management strategy is even more important. In any engineering job, I will probably
-                            be confronted with projects and tasks with little time to complete them. Though experience like this one, I can get used to these constraints and better prepare and manage projects without letting the stress get to me.
+                            be confronted with projects and tasks with little time to complete them. Though experience like this one, I can get used to these constraints and better prepare and manage projects without letting the stress get to me.<br /><br />
+                            You can find below the skills matrix analyzing my acquired training for this project. <br /><br />
 
                         </h1>
-                        <TableHackathon />
+                        <SkillMatrixHack />
+                        <Button className='button-skills' onClick={handleShow}>
+                            How to read the skills matrix
+                        </Button>
+                        <Modal size='lg' show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title className="pop-up-title">Skills designations</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body className="pop-up">
+                                <p class="mb-2">
+                                    Skill level:
+                                </p>
+                                <ul>
+                                    <li><b>1: AP</b> - level of application: follow-up of instructions or procedures </li>
+                                    <li><b>2: AN</b> - level of analysis: improvement or optimization of solutions or proposals </li>
+                                    <li><b>3: M</b> - level of proficiency: program design or specification definitions</li>
+                                    <li><b>4: EX</b> - level of expertise: definition of orientations or strategies</li>
+                                </ul>
+
+                                <p class="mb-2">
+                                    Learning mode:
+                                </p>
+                                <ul>
+                                    <li><b>IT: </b>Initial training</li>
+                                    <li><b>PE: </b>Peer exchange</li>
+                                    <li><b>ST: </b>Self-training</li>
+                                    <li><b>PP: </b>Professional practice</li>
+                                </ul>
+
+                            </Modal.Body>
+                        </Modal>
+
+                        <Footer theme={props.theme} />
                     </Fade>
                 </div>
                 {/* <SkillSection theme={theme} /> */}

@@ -29,7 +29,6 @@ function ExperienceAccordion(props) {
           })}
         </Accordion>
       </ThemeProvider>
-      <Sphere />
     </div>
   );
 }
