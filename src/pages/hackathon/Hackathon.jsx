@@ -9,7 +9,7 @@ import "./Hackathon.css"
 import { link } from "glamor";
 import { NavBar, Nav, NavItem, Button, Modal, Row, Col } from 'react-bootstrap';
 import { Player } from 'video-react';
-import video from '../../assests/video/demo_hackathon_team_haka.mp4';
+// import video from '../../assests/video/demo_hackathon_team_haka.mp4';
 import "video-react/dist/video-react.css";
 
 import SkillMatrixHack from "../../components/skillMatrix/skillMatrixHack";
@@ -136,9 +136,9 @@ function Hackathon(props) {
                                 <HackathonSlider />
                             </Col>
                             <Col className='d-flex align-items-end' md={6}>
-                                <Player className='vid '>
+                                {/* <Player className='vid '>
                                     <source src={video} />
-                                </Player>
+                                </Player> */}
                             </Col>
                         </Row>
                         <br /><br />
