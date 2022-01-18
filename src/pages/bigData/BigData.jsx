@@ -53,8 +53,7 @@ function BigData(props) {
                             The Analysis & Data processing module gathers three classes.
                             The first one was Big data and the second was focused on semantic web for IoT.
                             The third one is a more general course about Software Engineering
-                            practice. You can find a quick summary of the courses content in the adjacent table.
-                            The next subsection will focus on one experiences in more detail: the big data project.
+                            practice. You can find a quick summary of the courses content in the below table.
 
                             <br /><br />
                         </h1>
@@ -64,8 +63,8 @@ function BigData(props) {
                         <h5 className="course-text2">
                             <br />
                             This course was composed of a few lectures and 2 practical works. The goal of these labs was to introduce us to semantic web.
-                            We implemented an ontology on the Protege software with a reasoner and then exploited the ontology with 
-                            a java application. We started from a simple model where the Uniform Resource Identifier (URI°) was implicit and 
+                            We implemented an ontology on the Protege software with a reasoner and then exploited the ontology with
+                            a java application. We started from a simple model where the Uniform Resource Identifier (URI°) was implicit and
                             then upped the difficulty by using an API that manipulated URIs explicitly.
                             You can find the report made by my group in the link below:
                             <div className="portfolio-hackster-btn-div">
@@ -81,20 +80,29 @@ function BigData(props) {
                         <h1 className="course-subtitle">Big data  </h1>
                         <br />
                         <h5 className="course-text2">
+                            <div className="portfolio-hackster-btn-div">
+                                <button
+                                    {...styles}
+                                    className="button-datasheet d-block mx-auto"
+                                >
+
+                                    <a className='a-hack' href="https://drive.google.com/file/d/1qbDU66KHls6ueennLAafUO2D1vYr02TK/view?usp=sharing" target='Blank_' nonunderlinedhyperlink>Big data report</a>
+                                </button>
+                            </div>
                         </h5>
-                        
+
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Technical part
                         </h1>
                         <br /><br />
                         <h5 className="course-text2">
-                           Since this module was quite short and did not include major projects, I will summarize my technical challenges in one section.
-                           I did not encounter specific problems during the semantic data course because, like I said before, we were
-                           very guided and well supervised, so any question or interrogation was quickly answered by the intervenors.
-                           As for big data, it was a bit more challenging for me, because I took time assimilating all the clustering-detection methods.
-                           Thankfully my partner was a quick learner and helped me when I had difficulties. 
-                           Finally, on the software engineering side, the only challenge we faced was when using Jenkins since it was hard to deploy. We frankly 
-                           set it aside and tried using GitAction instead to automate our tests.
+                            Since this module was quite short and did not include major projects, I will summarize my technical challenges in one section.
+                            I did not encounter specific problems during the semantic data course because, like I said before, we were
+                            very guided and well supervised, so any question or interrogation was quickly answered by the intervenors.
+                            As for big data, it was a bit more challenging for me, because I took time assimilating all the clustering-detection methods.
+                            Thankfully my partner was a quick learner and helped me when I had difficulties.
+                            Finally, on the software engineering side, the only challenge we faced was for the continous integration. When using Jenkins, the dedicated software,we were not able to deploy it. We frankly
+                            set it aside and tried using GitAction instead to automate our tests.
                         </h5>
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Analytic part
@@ -156,14 +164,14 @@ function BigData(props) {
                         <h1 className="course-subtitle"> General feedback </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
-                            
+
                             In general, this module served as a good introduction to the field of data processing.
                             The big data project required some extra-work since we had many datasets to analyze, but I think the practical works were well
                             contructed, but needed maybe 1 or 2 more sessions.
-                            The semantic data labs were really accessible, which was great for students like me who had experience in semantic web applications. 
+                            The semantic data labs were really accessible, which was great for students like me who had experience in semantic web applications.
                             Finally, regarding software engineering, it was meant to be linked with the Service architecture course. I just wish it was applied on a longer project like the Innovative Project, since a one-month project is not really adapted to this kind of management method.
                             I understand that it was put there for learning purposes but I think it would have been more efficient on a semester-long project.
-                           In conclusion, I found the classes interesting and suitable to most students. 
+                            In conclusion, I found the classes interesting and suitable to most students.
 
 
                         </h1>

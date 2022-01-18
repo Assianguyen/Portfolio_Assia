@@ -76,7 +76,7 @@ function SkillMatrixData(props) {
                         <th>Know how to explore and represent data sets</th>
                         <th>3</th>
                         <th>3</th>
-                        <th>IT + PE</th>
+                        <th>IT, PE</th>
                     </tr>
                     <tr>
                         <th>Master complexity associated to statistical data processing and know the techniques to be used to minimise them</th>

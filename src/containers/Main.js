@@ -14,6 +14,8 @@ import Smartdevices from "../pages/smartdevices/Smartdevices";
 import InnovativeProject from "../pages/innovativeProject/InnovativeProject"
 import Communication from "../pages/communication/Communication";
 import BigData from "../pages/bigData/BigData";
+import Middleware from "../pages/middleware/Middleware";
+import Innovation from "../pages/innovation/Innovation";
 
 export default function Main(propss) {
   if (settings.isSplash) {
@@ -220,6 +222,26 @@ export default function Main(propss) {
               path="/data"
               render={(props) => (
                 <BigData
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+             <Route
+              path="/middleware"
+              render={(props) => (
+                <Middleware
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+             <Route
+              path="/innovation"
+              render={(props) => (
+                <Innovation
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}

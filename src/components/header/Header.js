@@ -107,12 +107,12 @@ function Header(props) {
                 >
                   <ul className="test1">
                     <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
-                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>                    
-                    <Dropdown.Item href="#">Middleware and Service</Dropdown.Item>                    
+                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>
+                    <Dropdown.Item href="#/middleware">Middleware and Service</Dropdown.Item>
                     <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
                     <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
                     <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
-                    <Dropdown.Item href="#">Innovation and humanity</Dropdown.Item>
+                    <Dropdown.Item href="#/innovation">Innovation and humanity</Dropdown.Item>
                   </ul>
                 </DropdownButton>
               </div>
@@ -126,12 +126,31 @@ function Header(props) {
                 >
                   <ul className="test1">
                     <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
-                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>                    
-                    <Dropdown.Item href="#/data">Middleware and Service</Dropdown.Item>                    
+                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>
+                    <Dropdown.Item href="#/middleware">Middleware and Service</Dropdown.Item>
                     <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
                     <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
                     <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
-                    <Dropdown.Item href="#">Innovation and humanity</Dropdown.Item>
+                    <Dropdown.Item href="#/innovation">Innovation and humanity</Dropdown.Item>
+                  </ul>
+                </DropdownButton>
+              </div>
+            </li>
+            <li>
+              <div className="nav-item dropdown">
+                <DropdownButton
+                  className="tech"
+                  id="Technical-button"
+                  title="Analytic part"
+                >
+                  <ul className="test1">
+                    <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
+                    <Dropdown.Item href="#/communication">Communication</Dropdown.Item>
+                    <Dropdown.Item href="#/middleware">Middleware and Service</Dropdown.Item>
+                    <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
+                    <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
+                    <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
+                    <Dropdown.Item href="#/innovation">Innovation and humanity</Dropdown.Item>
                   </ul>
                 </DropdownButton>
               </div>

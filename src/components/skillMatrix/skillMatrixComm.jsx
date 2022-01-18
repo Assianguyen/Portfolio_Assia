@@ -51,7 +51,7 @@ function SkillMatrixComm(props) {
                         <th>Understand and master the security mechanisms of IoT communication protocols</th>
                         <th>4</th>
                         <th>3</th>
-                        <th>IT + PE</th>
+                        <th>IT, PE</th>
                     </tr>
                    
                 </tbody>
