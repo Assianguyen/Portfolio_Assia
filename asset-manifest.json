@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio_Assia/static/css/main.453654dc.chunk.css",
-    "main.js": "/Portfolio_Assia/static/js/main.18a97b14.chunk.js",
-    "main.js.map": "/Portfolio_Assia/static/js/main.18a97b14.chunk.js.map",
+    "main.css": "/Portfolio_Assia/static/css/main.20968800.chunk.css",
+    "main.js": "/Portfolio_Assia/static/js/main.9d390965.chunk.js",
+    "main.js.map": "/Portfolio_Assia/static/js/main.9d390965.chunk.js.map",
     "runtime-main.js": "/Portfolio_Assia/static/js/runtime-main.ac969e2c.js",
     "runtime-main.js.map": "/Portfolio_Assia/static/js/runtime-main.ac969e2c.js.map",
     "static/css/2.c6d3c6d1.chunk.css": "/Portfolio_Assia/static/css/2.c6d3c6d1.chunk.css",
-    "static/js/2.dd02f158.chunk.js": "/Portfolio_Assia/static/js/2.dd02f158.chunk.js",
-    "static/js/2.dd02f158.chunk.js.map": "/Portfolio_Assia/static/js/2.dd02f158.chunk.js.map",
+    "static/js/2.08fc0d99.chunk.js": "/Portfolio_Assia/static/js/2.08fc0d99.chunk.js",
+    "static/js/2.08fc0d99.chunk.js.map": "/Portfolio_Assia/static/js/2.08fc0d99.chunk.js.map",
     "index.html": "/Portfolio_Assia/index.html",
-    "precache-manifest.ef7872af6fbe5a16d27e67314f0d385d.js": "/Portfolio_Assia/precache-manifest.ef7872af6fbe5a16d27e67314f0d385d.js",
+    "precache-manifest.865ade4340e895b79830b6329a742174.js": "/Portfolio_Assia/precache-manifest.865ade4340e895b79830b6329a742174.js",
     "service-worker.js": "/Portfolio_Assia/service-worker.js",
     "static/css/2.c6d3c6d1.chunk.css.map": "/Portfolio_Assia/static/css/2.c6d3c6d1.chunk.css.map",
-    "static/css/main.453654dc.chunk.css.map": "/Portfolio_Assia/static/css/main.453654dc.chunk.css.map",
-    "static/js/2.dd02f158.chunk.js.LICENSE.txt": "/Portfolio_Assia/static/js/2.dd02f158.chunk.js.LICENSE.txt",
+    "static/css/main.20968800.chunk.css.map": "/Portfolio_Assia/static/css/main.20968800.chunk.css.map",
+    "static/js/2.08fc0d99.chunk.js.LICENSE.txt": "/Portfolio_Assia/static/js/2.08fc0d99.chunk.js.LICENSE.txt",
     "static/media/100.jpg": "/Portfolio_Assia/static/media/100.53c38366.jpg",
     "static/media/100.png": "/Portfolio_Assia/static/media/100.8f1df092.png",
     "static/media/AIME.PNG": "/Portfolio_Assia/static/media/AIME.c84413f5.PNG",
@@ -41,6 +41,7 @@
     "static/media/buld.jpg": "/Portfolio_Assia/static/media/buld.a1051a22.jpg",
     "static/media/cloud.png": "/Portfolio_Assia/static/media/cloud.614dfbd9.png",
     "static/media/cluster.jpeg": "/Portfolio_Assia/static/media/cluster.38b875e4.jpeg",
+    "static/media/cluster.PNG": "/Portfolio_Assia/static/media/cluster.84535730.PNG",
     "static/media/codeInLogo.png": "/Portfolio_Assia/static/media/codeInLogo.b3685be8.png",
     "static/media/deeplearning_ai_logo.png": "/Portfolio_Assia/static/media/deeplearning_ai_logo.7a9b2eb0.png",
     "static/media/etsi-logo.svg": "/Portfolio_Assia/static/media/etsi-logo.dc660c04.svg",
@@ -86,7 +87,9 @@
     "static/media/rtk_payload.PNG": "/Portfolio_Assia/static/media/rtk_payload.1452172f.PNG",
     "static/media/sal.png": "/Portfolio_Assia/static/media/sal.62ac09c3.png",
     "static/media/setup_hackathon.jpeg": "/Portfolio_Assia/static/media/setup_hackathon.3b43923c.jpeg",
+    "static/media/soa_ms.png": "/Portfolio_Assia/static/media/soa_ms.7593bf5a.png",
     "static/media/soa_project.png": "/Portfolio_Assia/static/media/soa_project.655e0ee4.png",
+    "static/media/solution_triz.png": "/Portfolio_Assia/static/media/solution_triz.63d56564.png",
     "static/media/stanford_logo.png": "/Portfolio_Assia/static/media/stanford_logo.da0e7c80.png",
     "static/media/super_c_zoom.png": "/Portfolio_Assia/static/media/super_c_zoom.aed9f14f.png",
     "static/media/super_c_zoom2.png": "/Portfolio_Assia/static/media/super_c_zoom2.7e463723.png",
@@ -99,8 +102,8 @@
   "entrypoints": [
     "static/js/runtime-main.ac969e2c.js",
     "static/css/2.c6d3c6d1.chunk.css",
-    "static/js/2.dd02f158.chunk.js",
-    "static/css/main.453654dc.chunk.css",
-    "static/js/main.18a97b14.chunk.js"
+    "static/js/2.08fc0d99.chunk.js",
+    "static/css/main.20968800.chunk.css",
+    "static/js/main.9d390965.chunk.js"
   ]
 }
