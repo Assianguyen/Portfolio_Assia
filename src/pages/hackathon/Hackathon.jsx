@@ -136,9 +136,9 @@ function Hackathon(props) {
                                 <HackathonSlider />
                             </Col>
                             <Col className='d-flex align-items-end' md={6}>
-                                {/* <Player className='vid '>
-                                    <source src={video} />
-                                </Player> */}
+                                <Player className='vid '>
+                                    <source src='https://firebasestorage.googleapis.com/v0/b/rtk-not-lost.appspot.com/o/demo_hackathon_team_haka.mp4?alt=media&token=5d3efa17-b51d-45f8-9806-1dd0e9fd3b0c' />
+                                </Player>
                             </Col>
                         </Row>
                         <br /><br />
