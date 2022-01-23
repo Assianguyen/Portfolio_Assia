@@ -201,6 +201,25 @@
   color:black !important;
 }
 
+.smartdevice-pic{
+  border-radius: 2em;
+}
+
+.innovative-pic{
+  border-radius: 2em;
+}
+.middleware-pic{
+  border-radius: 1em;
+}
+
+.data-pic{
+  border-radius: 2em;
+}
+
+.inn-pic{
+  border-radius: 2em;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .course-heading {

@@ -103,7 +103,7 @@ function Header(props) {
                 <DropdownButton
                   class="navbar-brand dropdown-toggle"
                   id="dropdown-basic-button"
-                  title="Descriptive part"
+                  title="Select a module"
                 >
                   <ul className="test1">
                     <Dropdown.Item href="#/smartdevices"> Smart devices </Dropdown.Item>
@@ -117,7 +117,7 @@ function Header(props) {
                 </DropdownButton>
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="nav-item dropdown">
                 <DropdownButton
                   className="tech"
@@ -154,7 +154,7 @@ function Header(props) {
                   </ul>
                 </DropdownButton>
               </div>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 className="xp"

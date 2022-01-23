@@ -31,7 +31,7 @@ function Innovation(props) {
                     <Fade bottom duration={2000} distance="20px">
                         <div className="course-heading-img-div">
                             <img
-                                className="com-pic"
+                                className="inn-pic"
                                 src={require(`../../assests/images/innovation.jpg`)}
                                 alt=""
                                 style={{ width: "35%" }}
@@ -69,17 +69,6 @@ function Innovation(props) {
 
                             <br /><br />
 
-                            {/* <div className="portfolio-hackster-btn-div">
-                                <button
-                                    {...styles}
-                                    className="button-datasheet d-block mx-auto"
-                                >
-
-                                    <a className='a-hack' href="https://drive.google.com/file/d/1mj6QzKMF_Me-08sUTEua44W_u1xL_GDW/view?usp=sharing" target='Blank_' nonunderlinedhyperlink>SDR report</a>
-                                </button>
-                            </div> */}
-
-
                             <h1 className="course-subtitle">Creativity methods</h1>
                             <br />
 
@@ -103,19 +92,38 @@ function Innovation(props) {
                                     <a className='a-hack' href="https://drive.google.com/file/d/1YVhEFe33bUE7dwS18peabzzyTG2JK99I/view?usp=sharing" target='Blank_' nonunderlinedhyperlink>TRIZ report</a>
                                 </button>
                             </div>
+                            <br /><br />
 
-                            <img
-                                className="triz d-block mx-auto"
-                                src={require(`../../assests/images/triz1.png`)}
-                                alt=""
-                                style={{ width: "50%" }}
-                            />
+                            <Row>
+                                <Col md={6}>
+                                    <img
+                                        className="triz d-block mx-auto"
+                                        src={require(`../../assests/images/triz1.png`)}
+                                        alt=""
+                                        style={{ width: "100%" }}
+                                    />
+                                    <h6 className="text-center !important"> <i>S-curve for temporal analysis</i></h6>
+                                </Col>
+                                <Col md={6}>
+                                    <img
+                                        className="triz d-block mx-auto"
+                                        src={require(`../../assests/images/solution_triz.png`)}
+                                        alt=""
+                                        style={{ width: "90%" }}
+                                    />
+                                    <br/>
+                                    <h6 className="text-center !important"> <i>Solution proposed</i></h6>
+                                </Col>
+
+                            </Row>
+
+
                             <br />
 
                             <h1 className="course-subtitle">Individualized Professional Development</h1>
                             <br />
 
-                            This class constited in a simulated interview with a professional. In my case it was an RH from a company called Celad.
+                            This class consisted in a simulated interview with a professional. In my case it was an RH from a company called Celad.
                             The goal was to conduct a typical interview for a fake job and learn how to answer questions about salary expectations for example.
 
                         </h5>
@@ -186,7 +194,7 @@ function Innovation(props) {
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
                             As we get closer to the work world, gathering tranversal skills is primordial. Knowing how to tackle any kind of project as well
-                            as having good communicating skills is very important. 
+                            as having good communicating skills is very important.
                             This is why I think these kinds of modules play a big role in shaping us into complete engineers. I especially enjoy the fake interview since
                             I really wish to get better in that type of exercise. It is a great opportunity to have a feedback from a person in the industry world.
                             Finally, the fact that these classes were placed early in the semester was great since we did not have to rush our training.

@@ -10,8 +10,8 @@ function InnCourses(props) {
             <Table className='tabSD' striped hover responsive bordered>
                 <thead className='head'>
                     <tr>
-                        <th style={{ borderTopLeftRadius: "1em" }}><span>Innovative project</span></th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Missions and Context</th>
+                        <th ><span>Innovative project</span></th>
+                        <th>Missions and Context</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,8 +32,8 @@ function InnCourses(props) {
                         </th>
                     </tr>
                     <tr>
-                        <th style={{ borderBottomLeftRadius: "0.5em" }}>English</th>
-                        <th style={{ borderBottomRightRadius: "0.5em" }}>
+                        <th>English</th>
+                        <th>
                         In close collaboration with innovative project, this course serves as an support for the 
                         different deliverables like the report or the oral presentation.
                         It includes project reviews to follow our progress.

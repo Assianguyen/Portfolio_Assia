@@ -10,10 +10,10 @@ function TableISS(props) {
             <Table className='tabISS' striped hover responsive bordered>
                 <thead className='head'>
                     <tr>
-                        <th style={{ borderTopLeftRadius: "1em" }}>Code</th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Title</th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Supervisor</th>
-                        <th style={{ borderTopLeftRadius: "1em" }}>Total hours</th>
+                        <th>Code</th>
+                        <th>Title</th>
+                        <th>Supervisor</th>
+                        <th>Total hours</th>
                     </tr>
                 </thead>
                 <tbody>

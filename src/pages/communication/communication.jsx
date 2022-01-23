@@ -46,7 +46,7 @@ function Communication(props) {
                         </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br /><br />
-                            The Communication course is divided in five sub-courses that revolve around the Internet of Things field.
+                            The Communication course is divided in 5 sub-courses that revolve around the Internet of Things field.
                             It is a really compact module involving many topics such as wireless communication protocol,
                             software-defined network, energy for connected objects, and even security. They all fall under the umbrella of
                             systems of communication working towards networks of the future. Here is a table summarizing the courses of this module and their
@@ -143,7 +143,10 @@ function Communication(props) {
                             batteries, their constraints and how to select the most adapted one for a specific system.
                             We also followed a practical lab on Electromagnetic energy harvesting and wireless power transfer.
                             The antennas used in this lab sadly malfunctionned and we could not conduct the tests on our own.
-                            We also had two more practical work at the AIME lab that aimed to build a supercapacitor using a carbon deposit. You can find below a few photos of the result.<br /><br />
+                            We also had two more practical work at the AIME lab that aimed to build and characterize micro-supercapacitors using a carbon deposit. 
+                            To do so we fabricated the electrodes using photoetching and lift-off techniques. We mounted the 
+                            chip on a TO-8 package and then put a carbon deposition on top. We then measured the capacitance of the device.
+                            You can find below a few photos of the result.<br /><br />
                             <Supercond />
                             <br /><br />
 
@@ -154,7 +157,7 @@ function Communication(props) {
                             We had to produce a security analysis on our innovative project. After summarizing our project, we had to
                             characterize the goals of the potential attackers, identify the attackers capacities, analyze
                             the communication interfaces to identify weaknesses and finally propose counter-measures.
-                            The practical work for this course focused on hardware attacks based on fault injection. It consists of introducing a fault into
+                            The practical work for this course focused on hardware attacks based on fault injection. It consisted of introducing a fault into
                             the system to change its behavior. The objective of this lab was to understand how these attacks work and to propose
                             security solutions.
                             <div className="portfolio-hackster-btn-div">
@@ -183,6 +186,9 @@ function Communication(props) {
                             realized we did not have the expected information, in particular in the physical layer and MAC layer, we confused the modulation process with
                             multiplexing process. We also did not calculate the energy consumption properly and calculated the power consumption instead.
                             However, after being corrected, I made sure I did not make similar mistakes in my MAC layer report by double-checking each concept I mentionned.
+                            The other difficulty while doing these research was the amount of documentation and scientific papers on the subject. They were hard to
+                            assimilate and comprehend. By exchanging with other students what they had understood of the different MAC layers for example, really
+                            helped me establish knowledge on the subject.
 
                         </h5>
                         <br />
@@ -223,7 +229,7 @@ function Communication(props) {
                             Still, I think I pushed through and was able to acquire most of the skills linked to these courses.
                             I relied a lot on learning with peers, because I was surrounded by students with experience in these fields.
                             I felt the most comfortable in the course about Energy for connected objects, since the 4rth year in embedded systems provided the same training.
-                            I was thus able to put to use the skills I had acquired last year.
+                            I was thus able to put to use the skills I had acquired last year. 
                             Regarding the Protocol for connected Objects course, we contributed with our presentation to building the course.
                             I think being directly confronted with my peers and professor really enabled me to pinpoint what i had not understood or
                             assimilated. Even though the security course was hard to apprehend theoretically, the practical work

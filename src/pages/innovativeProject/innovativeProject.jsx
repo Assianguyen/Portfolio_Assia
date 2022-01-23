@@ -145,7 +145,6 @@ function InnovativeProject(props) {
                                 <Col md={6}>
                                     <div className="">
                                         <ReactPlayer url='https://www.youtube.com/watch?v=SnIFUUjsiBk'
-                                            playing='true'
                                             controls='true'
                                             width='100%'
                                             height= '300px'

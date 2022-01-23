@@ -100,8 +100,7 @@ export default function Skills(props) {
               the <b>analytic part</b> of each module
             </li>
             <br />
-            By selecting in the header the descriptive, technical or
-            analytic part you can navigate any course and their specific part .
+            By selecting in the header a module, you can navigate any course and their specific part .
           </h1>
           <br />
           <h1 className="skills-title" style={{ color: theme.accentColor }}>

@@ -10,8 +10,8 @@ function ComCourses(props) {
             <Table className='tabSD' striped hover responsive bordered>
                 <thead className='head'>
                     <tr>
-                        <th style={{ borderTopLeftRadius: "1em" }}><span>Communication</span></th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Missions and Context</th>
+                        <th><span>Communication</span></th>
+                        <th>Missions and Context</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,15 +33,15 @@ function ComCourses(props) {
                         </th>
                     </tr>
                     <tr>
-                        <th style={{ borderBottomLeftRadius: "0.5em" }}>Security for network of connected objects</th>
-                        <th style={{ borderBottomRightRadius: "0.5em" }}>
+                        <th>Security for network of connected objects</th>
+                        <th>
                         General presentations about security and possible attacks on connected devices followed by a pratical work.
                         Notions of integrity and confidentiality in different settings, with equipment deployed on a large scale.
                         </th>
                     </tr>
                     <tr>
-                        <th style={{ borderBottomLeftRadius: "0.5em" }}>Emerging network (SDN, NGN)</th>
-                        <th style={{ borderBottomRightRadius: "0.5em" }}>
+                        <th>Emerging network (SDN, NGN)</th>
+                        <th>
                             Lectures to master the concepts behind emerging network paradigm, especially Software-Defined Networking (SDN) and 
                             the Location ID separation protocol (LISP).
                             Two practical labs focus on the implementation of a SDN with OpenFlow via a SDN controller

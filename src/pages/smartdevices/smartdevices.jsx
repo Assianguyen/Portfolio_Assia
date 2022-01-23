@@ -48,7 +48,7 @@ function Smartdevices(props) {
                         </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br /><br />
-                            The Smart Devices course is divided in five sub-courses that revolve around the conception and use of a smart sensor, in our case a nano-based gas detector.
+                            The Smart Devices course is divided in 5 sub-courses that revolve around the conception and use of a smart sensor, in our case a nano-based gas detector.
                             This module started from the fabrication of the gaz sensor in the AIME lab, and finished by harnessing of the data measured post-treatment.
                             That included designing the electronic circuit to retrieve the data as well as implementing the arduino code and interface associated.
                             You can find a summary of the courses content in the below table.

@@ -10,10 +10,10 @@ function SkillMatrixSD(props) {
             <Table className='tabMatrix' striped hover responsive bordered>
                 <thead className='head'>
                     <tr>
-                        <th style={{ borderTopLeftRadius: "1em" }}>Skill</th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Learning mode</th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Required level</th>
-                        <th style={{ borderTopLeftRadius: "1em" }}>Self-evaluation level</th>
+                        <th>Skill</th>
+                        <th>Learning mode</th>
+                        <th>Required level</th>
+                        <th>Self-evaluation level</th>
                     </tr>
                 </thead>
                 <tbody>

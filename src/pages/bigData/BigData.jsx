@@ -50,10 +50,10 @@ function BigData(props) {
                         </h1>
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
-                            The Analysis & Data processing module gathers three classes.
-                            The first one was Big data and the second was focused on semantic web for IoT.
+                            The Analysis & Data processing module is divided in 3 classes.
+                            The first one is Big data and the second is focused on semantic web for IoT.
                             The third one is a more general course about Software Engineering
-                            practice. You can find a quick summary of the courses content in the below table.
+                            practice. You can find below a quick summary of the courses content.
 
                             <br /><br />
                         </h1>
@@ -62,10 +62,13 @@ function BigData(props) {
                         <h1 className="course-subtitle"> Semantic data </h1>
                         <h5 className="course-text2">
                             <br />
-                            This course was composed of a few lectures and 2 practical works. The goal of these labs was to introduce us to semantic web.
-                            We implemented an ontology on the Protege software with a reasoner and then exploited the ontology with
-                            a java application. We started from a simple model where the Uniform Resource Identifier (URI°) was implicit and
-                            then upped the difficulty by using an API that manipulated URIs explicitly.
+                            This course was composed of a few lectures and 2 practical works.
+                            The goal of these labs was to introduce us to semantic web.
+                            We had to develop an meteorological application, using a light ontology by creating classes with properties.
+                            Then, we populated the ontology by linking individuals with different properties.
+                            We implemented the ontology on the Protege software with a reasoner and then exploited the ontology with
+                            a java application. We started from a simple model where the Uniform Resource Identifier (URI) was implicit and
+                            then upped the difficulty by using an API that manipulated URIs explicitly.<br />
                             You can find the report made by my group in the link below:
                             <div className="portfolio-hackster-btn-div">
                                 <button
@@ -80,6 +83,25 @@ function BigData(props) {
                         <h1 className="course-subtitle">Big data  </h1>
                         <br />
                         <h5 className="course-text2">
+
+                            During this course, we learned how to process data and practiced 3 clustering methods: K-Means, Agglomerative Clustering, et DBSCAN.
+                            These are the most used methods out of the scikit-learn library in Python. Each one of these
+                            methods possesses a different algorithm and properties that make it more or less suitabke for certain data sets.
+                            We started by choosing certain data sets from a wide choice of data sets, with diverse characteristics
+                            such as their number of clusters or if they were convex or concave. We then applied the different
+                            clustering methods on these data sets to deduct the strengths and limits of each method.
+                            Then, after drawing those conclusions, we used the same methods on unknown fictitious data sets to determine the number of clusters.
+                            Finally, we conducted a study on a real meteorological data set.
+                            On the picture below, you can find an example of the K-means method applied to different data sets.
+                            <img
+                                className="cluster d-block mx-auto"
+                                src={require(`../../assests/images/cluster.PNG`)}
+                                alt=""
+                                style={{ width: "50%" }}
+                            />
+                            <h6 className="text-center !important"> <i>K-means method tested on different data sets</i></h6>
+
+
                             <div className="portfolio-hackster-btn-div">
                                 <button
                                     {...styles}

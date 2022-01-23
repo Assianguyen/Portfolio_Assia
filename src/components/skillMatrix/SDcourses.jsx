@@ -10,8 +10,8 @@ function SDcourses(props) {
             <Table className='tabSD' striped hover responsive bordered>
                 <thead className='head'>
                     <tr>
-                        <th style={{ borderTopLeftRadius: "1em" }}>Smart Devices</th>
-                        <th style={{ borderTopRightRadius: "1em" }}>Missions and Context</th>
+                        <th>Smart Devices</th>
+                        <th>Missions and Context</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,8 +31,8 @@ function SDcourses(props) {
                         </th>
                     </tr>
                     <tr>
-                        <th style={{ borderBottomLeftRadius: "0.5em" }}>Analog electronic lab</th>
-                        <th style={{ borderBottomRightRadius: "0.5em" }}>
+                        <th>Analog electronic lab</th>
+                        <th>
                             Practical work revolving around the design of analog circuit destined to retrieve the output
                             values of the gas sensor with a microcontroller.
                         </th>
