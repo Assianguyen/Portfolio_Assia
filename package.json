@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "opportfolio",
-  "homepage": "https://Assianguyen.github.io/Portfolio_Assia ",
+  "homepage": "https://assianguyen.github.io/Portfolio_Assia ",
   "version": "1.2.0",
   "scripts": {
     "build": "react-scripts build",

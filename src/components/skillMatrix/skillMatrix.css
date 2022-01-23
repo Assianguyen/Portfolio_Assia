@@ -9,7 +9,7 @@
 .tabMatrix{
   color: #e9ecf5 !important;
   width: 80%; 
-  margin-left: 123px;
+  /* margin-left: 123px; */
 } 
 
 .table-hover tbody tr:hover{
