@@ -71,12 +71,7 @@ function SkillMatrixInn(props) {
                         <th>4</th>
                         <th>4</th>
                     </tr>
-                    <tr>
-                        <th>Be able to design the electronic circuit of a sensor’s signal conditioner (design + simulation)</th>
-                        <th>IT</th>
-                        <th>4</th>
-                        <th>4</th>
-                    </tr>
+                    
                     <tr>
                         <th>Be self-sufficient and responsible towards my education </th>
                         <th>IT, ST</th>

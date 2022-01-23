@@ -3,13 +3,20 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
-import { experience } from "../../portfolio";
+import { experience ,exp } from "../../portfolio";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import { style } from "glamor";
 
 function Experience(props) {
   const theme = props.theme;
   console.log(props.setTheme);
+  const styles = style({
+    backgroundColor: `${theme.accentBright}`,
+    ":hover": {
+      boxShadow: `0 5px 15px ${theme.accentBright}`,
+    },
+  });
   return (
     <div className="experience-main">
       <Header theme={theme} setTheme={props.setTheme} />
@@ -49,6 +56,16 @@ function Experience(props) {
         </Fade>
       </div>
       <ExperienceAccordion sections={experience["sections"]} theme={theme} />
+      
+        <div className="portfolio-hackster-btn-div">
+          <button
+            {...styles}
+            className="button-datasheet d-block mx-auto"
+          >
+
+            <a className='a-hack' href="https://drive.google.com/file/d/1xV0TO79cfj8xWf8bBZrSrq31IAraYoSd/view?usp=sharing" target='Blank_' nonunderlinedhyperlink>Internship poster</a>
+          </button>
+        </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

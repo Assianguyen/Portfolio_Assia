@@ -9,6 +9,7 @@ import { NavBar, Nav, NavItem, Button, Modal, Row, Col } from 'react-bootstrap';
 
 import Commcourses from "../../components/skillMatrix/commCourses"
 import SkillMatrixComm from "../../components/skillMatrix/skillMatrixComm"
+import Supercond from "../../components/aimeslider/Supercond"
 
 
 
@@ -142,7 +143,9 @@ function Communication(props) {
                             batteries, their constraints and how to select the most adapted one for a specific system.
                             We also followed a practical lab on Electromagnetic energy harvesting and wireless power transfer.
                             The antennas used in this lab sadly malfunctionned and we could not conduct the tests on our own.
-                            We are supposed to have two more practical work at the AIME lab. However, at this day we have not completed these classes.<br /><br />
+                            We also had two more practical work at the AIME lab that aimed to build a supercapacitor using a carbon deposit. You can find below a few photos of the result.<br /><br />
+                            <Supercond />
+                            <br /><br />
 
                             <h1 className="course-subtitle"> Security for network of connected objects </h1>
                             <br />
@@ -151,7 +154,9 @@ function Communication(props) {
                             We had to produce a security analysis on our innovative project. After summarizing our project, we had to
                             characterize the goals of the potential attackers, identify the attackers capacities, analyze
                             the communication interfaces to identify weaknesses and finally propose counter-measures.
-                            At this day, we did not have the practical work for this course.
+                            The practical work for this course focused on hardware attacks based on fault injection. It consists of introducing a fault into
+                            the system to change its behavior. The objective of this lab was to understand how these attacks work and to propose
+                            security solutions.
                             <div className="portfolio-hackster-btn-div">
                                 <button
                                     {...styles}
@@ -195,7 +200,7 @@ function Communication(props) {
                         <h1 className="course-subtitle">Emerging networks </h1>
                         <h5 className="course-text2">
                             <br />
-                            This course was challenging because it used very complex concepts in my opinion. Even though I did
+                            This course was challenging because it used very complex concepts and required a high level of abstraction in my opinion. Even though I did
                             network courses in my previous years, I did not feel as well equiped as I would have liked.
                             During the practical works, I was able to pair with student computer science, which was great for me since
                             they were familiar with that field, and were here help me when I had difficulties or questions.<br /><br />
@@ -214,19 +219,19 @@ function Communication(props) {
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
                             In retrospect, this module is the one where I struggled the most, as I felt I sometimes lacked
-                            some knowledge, notably in SDR and Security. I felt like it was more adapted to students with a computer science background. 
-                            Still, I think I pushed through and was able to acquire most of the skills linked to these courses. 
+                            some knowledge, notably in SDR and Security. I felt like it was more adapted to students with a computer science background.
+                            Still, I think I pushed through and was able to acquire most of the skills linked to these courses.
                             I relied a lot on learning with peers, because I was surrounded by students with experience in these fields.
                             I felt the most comfortable in the course about Energy for connected objects, since the 4rth year in embedded systems provided the same training.
-                            I was thus able to put to use the skills I had acquired last year.  
+                            I was thus able to put to use the skills I had acquired last year.
                             Regarding the Protocol for connected Objects course, we contributed with our presentation to building the course.
-                            I think being directly confronted with my peers and professor really enabled me to pinpoint what i had not understood or 
+                            I think being directly confronted with my peers and professor really enabled me to pinpoint what i had not understood or
                             assimilated. Even though the security course was hard to apprehend theoretically, the practical work
                             really put into practice what we learned in lectures in an interractive and easy-to-follow way.
                             In conclusion, I felt that in general I had to attend the practice labs to be able to grasp the notions and put them in context.
-                            <br/><br/>
+                            <br /><br />
 
-                            
+
                         </h1>
                         <SkillMatrixComm />
                         <Button className='button-skills' onClick={handleShow}>
@@ -265,12 +270,12 @@ function Communication(props) {
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
                             The Communication course was complex because it condensed a lot of new concepts and courses that seemed,
-                            at first, to have little in common. However, by the end of the semester I realized they were more connected than 
-                            I initially thought and were essential notions to take into account when designing an IoT system. 
+                            at first, to have little in common. However, by the end of the semester I realized they were more connected than
+                            I initially thought and were essential notions to take into account when designing an IoT system.
                             I appreciated the effort to integrate the security course in the Innovative project.
                             Since a portion of this module was done at the end of the semester, like the security and energy labs, we were a bit
-                            rushed and we were not in the best conditions to fully commit ourselves to this training. 
-                            This knowledge and training will be extremely useful to me in the near future since my apprenticeship revolves 
+                            rushed and we were not in the best conditions to fully commit ourselves to this training.
+                            This knowledge and training will be extremely useful to me in the near future since my apprenticeship revolves
                             around the devopment of wireless protocols, especially the Bluetooth Low-Energy protocol.
                             This is why I made sure to invest as much energy as I could during this module.
                         </h1>

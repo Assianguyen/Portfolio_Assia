@@ -3,11 +3,11 @@
 }
 
 .tabSD{
-  color: #e9ecf5;
+  color: #e9ecf5 !important;
   
 } 
 .tabMatrix{
-  color: #e9ecf5;
+  color: #e9ecf5 !important;
   width: 80%; 
   margin-left: 123px;
 } 

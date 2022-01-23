@@ -1,191 +1,204 @@
 import React, { Component } from 'react';
-import ReactTable from "react-table-6";
-import { Container, Row, Col } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import "react-table-6/react-table.css"
-import { style } from "glamor";
-import "./tableISS.css"
-import "bootstrap/dist/css/bootstrap.min.css";
+import './tableISS.css';
 
 function TableISS(props) {
-   
-    const data = [{
-        code: 'I5SSEN11',
-        title: 'Smart Devices',
-        supervisor: 'Jérémie Grisolia',
-        totalhours: '52,75'
-    }, {
-        code: '',
-        title: 'Microcontrollers and Open-Source Hardware, Embedded IA (M&OSH)',
-        supervisor: 'Jérémie Grisolia, Sylvaine Lohez',
-        totalhours: '25'
-    }, {
-        code: '',
-        title: 'CAD, manufacturing and integration of nano-technology sensors (AIME)',
-        supervisor: 'Jérémie Grisolia',
-        totalhours: '14'
-    }, {
-        code: '',
-        title: 'Sensors introduction',
-        supervisor: 'Jérémie Grisolia',
-        totalhours: '11,25'
-    }, {
-        code: '',
-        title: 'Analog electronic labs',
-        supervisor: 'Jérémie Grisolia',
-        totalhours: '2,5'
-    }, {
-        code: 'I5SSCM11',
-        title: 'Communication',
-        supervisor: 'Daniela Dragomirescu',
-        totalhours: '64,25'
-    }, {
-        code: '',
-        title: 'Protocols for connected objects',
-        supervisor: 'Daniela Dragomirescu, Slim Abdellatif, Etienne Sicard',
-        totalhours: '33,25'
-    }, {
-        code: '',
-        title: 'Energy for connected objects  (recovery, transfert)',
-        supervisor: 'Jean-Marie Dilhac',
-        totalhours: '10,25'
-    }, {
-        code: '',
-        title: 'Security for network of connected objects',
-        supervisor: 'Eric Alata',
-        totalhours: '10,25'
-    }, {
-        code: '',
-        title: 'Emerging network (SDN, NGN)',
-        supervisor: 'Slim Abdellatif',
-        totalhours: '10,25'
-    }, {
-        code: 'I5SSIL11',
-        title: 'Middleware & Service',
-        supervisor: 'Thierry Monteil',
-        totalhours: '62'
-    }, {
-        code: '',
-        title: 'Service Oriented Architecture',
-        supervisor: 'Nawal Guermouche',
-        totalhours: '31'
-    }, {
-        code: '',
-        title: 'Middleware for IoT',
-        supervisor: 'Thierry Monteil',
-        totalhours: '14,75'
-    }, {
-        code: '',
-        title: 'Adaptability : cloud and  autonomic management',
-        supervisor: 'Sami Yangui',
-        totalhours: '16,25'
-    }, {
-        code: 'I5SSIF11',
-        title: 'Analysis and data processing, business applications',
-        supervisor: 'Nawal Guermouche',
-        totalhours: '37,5'
-    }, {
-        code: '',
-        title: 'Software Engineering',
-        supervisor: 'Nawal Guermouche',
-        totalhours: '6,25'
-    }, {
-        code: '',
-        title: 'Semantic data',
-        supervisor: 'Nicolas Seydoux, Nathalie Hernandez',
-        totalhours: '8'
-    }, {
-        code: '',
-        title: 'Big data',
-        supervisor: 'Gilles Tredan',
-        totalhours: '15'
-    }, {
-        code: '',
-        title: 'Hackaton',
-        supervisor: 'Thierry Monteil',
-        totalhours: '8,25'
-    }, {
-        code: 'I5SSRS11',
-        title: 'Project & Portfolio',
-        supervisor: 'Vincent Migliore',
-        totalhours: '75,75'
-    }, {
-        code: '',
-        title: 'Innovative project',
-        supervisor: 'Thierry Monteil',
-        totalhours: '37,5'
-    }, {
-        code: '',
-        title: 'Portfolio',
-        supervisor: 'Vincent Migliore',
-        totalhours: '8,25'
-    }, {
-        code: '',
-        title: 'English',
-        supervisor: 'Joseph Shea',
-        totalhours: '10,25'
-    }, {
-        code: 'I5SSGE11',
-        title: 'Innovation and humanity',
-        supervisor: 'Hélène Hereng',
-        totalhours: '77,5'
-    }, {
-        code: '',
-        title: 'Innovation',
-        supervisor: 'Eric Jolivet',
-        totalhours: '17,5'
-    }, {
-        code: '',
-        title: 'Creativity methods / TRIZ method',
-        supervisor: 'Stéphane Negny',
-        totalhours: '10'
-    }, {
-        code: '',
-        title: 'Team Management / Social Acceptability',
-        supervisor: 'N. Lacune, MJ Tragin',
-        totalhours: '20'
-    }, {
-        code: '',
-        title: 'Sport',
-        supervisor: 'Véronique Gros, Sylvie Rossard',
-        totalhours: '21,5'
-    }, {
-        code: '',
-        title: 'Individualized Professional Development',
-        supervisor: 'Thierry Dupont',
-        totalhours: '8,5'
-    }
-    ]
-    const columns = [{
-        Header: 'Code',
-        accessor: 'code',
-        width: 150
-    }, {
-        Header: 'Title',
-        accessor: 'title'
-    }, {
-        Header: 'Supervisor',
-        accessor: 'supervisor'
-    }, {
-        Header: 'Total hours',
-        accessor: 'totalhours',
-        width : 150
-    }]
+
     return (
-        <div className="test">
-            <ReactTable 
-                style={{
-                    // borderBottom: 'solid 1px white',
-                    // borderTop: 'solid 1px white', 
-                    // borderLeft: 'solid 1px white', 
-                    // borderRight: 'solid 1px white'
-                    border: 'solid 1px white'
-                }}
-                data={data}
-                columns={columns}
-                showPagination={false}
-                defaultPageSize={29}
-            // pageSizeOptions={[2, 4, 6]}
-            />
+        <div className=''>
+            <Table className='tabISS' striped hover responsive bordered>
+                <thead className='head'>
+                    <tr>
+                        <th style={{ borderTopLeftRadius: "1em" }}>Code</th>
+                        <th style={{ borderTopRightRadius: "1em" }}>Title</th>
+                        <th style={{ borderTopRightRadius: "1em" }}>Supervisor</th>
+                        <th style={{ borderTopLeftRadius: "1em" }}>Total hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th className='module'>I5SSEN11</th>
+                        <th className='module'>Smart Devices</th>
+                        <th className='module'> Jérémie Grisolia</th>
+                        <th className='module'>52,75</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Microcontrollers and Open-Source Hardware, Embedded IA (M&OSH)</th>
+                        <th>Jérémie Grisolia, Sylvaine Lohez</th>
+                        <th>25</th>
+                    </tr>
+                    <tr>
+                        <th ></th>
+                        <th > CAD, manufacturing and integration of nano-technology sensors (AIME)</th>
+                        <th> Jérémie Grisolia </th>
+                        <th> 14 </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th >Sensors introduction</th>
+                        <th> Jérémie Grisolia </th>
+                        <th> 11,25 </th>
+                    </tr>
+
+                     <tr>
+                        <th></th>
+                        <th >Analog electronic labs</th>
+                        <th> Jérémie Grisolia </th>
+                        <th> 2,5 </th>
+                    </tr>
+                    <tr>
+                        <th className='module'><span>I5SSCM11</span></th>
+                        <th className='module'>Communication</th>
+                        <th className='module'>Daniela Dragomirescu</th>
+                        <th className='module'>64,25</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Protocols for connected objects</th>
+                        <th>Daniela Dragomirescu, Slim Abdellatif, Etienne Sicard</th>
+                        <th>33,25</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Energy for connected objects (recovery, transfert)</th>
+                        <th>Jean-Marie Dilhac</th>
+                        <th>10,25</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Security for network of connected objects</th>
+                        <th>Eric Alata</th>
+                        <th>10,25</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Emerging network (SDN, NGN)</th>
+                        <th>Slim Abdellatif</th>
+                        <th>10,25</th>
+                    </tr>
+
+                    <tr>
+                        <th className='module'><span>I5SSIL11</span></th>
+                        <th className='module'>Middleware & Service</th>
+                        <th className='module'>Thierry Monteil</th>
+                        <th className='module'>62</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Service Oriented Architecture</th>
+                        <th>Nawal Guermouche</th>
+                        <th>31</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Middleware for IoT</th>
+                        <th>Thierry Monteil</th>
+                        <th>14,75</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Adaptability : cloud and autonomic management</th>
+                        <th>Sami Yangui</th>
+                        <th>16,25</th>
+                    </tr>
+                    <tr>
+                        <th className='module'><span>I5SSIF11</span></th>
+                        <th className='module'>Analysis and data processing, business applications</th>
+                        <th className='module'>Nawal Guermouche</th>
+                        <th className='module'>37,5</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Software Engineering</th>
+                        <th>Nawal Guermouche</th>
+                        <th>6,25</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Semantic data</th>
+                        <th>Nicolas Seydoux, Nathalie Hernandez</th>
+                        <th>8</th>
+                    </tr> 
+                    <tr>
+                        <th></th>
+                        <th>Big data</th>
+                        <th>Marie-Jo Huguet,</th>
+                        <th>15</th>
+                    </tr> 
+                    <tr>
+                        <th></th>
+                        <th>Hackaton</th>
+                        <th>Thierry Monteil</th>
+                        <th>8,25</th>
+                    </tr>
+                    <tr>
+                        <th className='module'><span>I5SSRS11</span></th>
+                        <th className='module'>Project & Portfolio</th>
+                        <th className='module'>Vincent Migliore</th>
+                        <th className='module'>75,75</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Innovative project</th>
+                        <th>Thierry Monteil</th>
+                        <th>37,5</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Portfolio</th>
+                        <th>Vincent Migliore</th>
+                        <th>8,25</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>English</th>
+                        <th>Joseph Shea</th>
+                        <th>10,25</th>
+                    </tr>
+                    <tr>
+                        <th className='module'><span>I5SSGE11</span></th>
+                        <th className='module'>Innovation and humanity</th>
+                        <th className='module'>Hélène Hereng</th>
+                        <th className='module'>77,5</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Innovation</th>
+                        <th>Eric Jolivet</th>
+                        <th>17,5</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Creativity methods / TRIZ method</th>
+                        <th>Stéphane Negny</th>
+                        <th>10</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Team Management / Social Acceptability</th>
+                        <th>N. Lacune, MJ Tragin</th>
+                        <th>20</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Sport</th>
+                        <th>Véronique Gros, Sylvie Rossard</th>
+                        <th>21,5</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Individualized Professional Development</th>
+                        <th>Thierry Dupont</th>
+                        <th>8,5</th>
+                    </tr>
+                    
+
+
+                    
+                </tbody>
+            </Table>
         </div>
     )
 }

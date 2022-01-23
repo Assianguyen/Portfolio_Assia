@@ -115,7 +115,7 @@ function BigData(props) {
                             This module was more oriented towards computer science, so it was a way for me to be introduced to
                             a totally different skillset from mine.
                             For the Processing Semantic Data, I managed to tackle the tasks of the lab without much difficulty
-                            thanks to the very guided practical work material. I was able create an ontology with Protegé and a Knowledge-base.
+                            thanks to the well guided practical work material. I was able create an ontology with Protegé and a Knowledge-base.
                             This lab was a great and accessible way to apply the notions seen during lectures.
                             Because of time constraints, we did not have time to use semantic metadata to enrich a dataset which is a shame because I would have an interesting application.
                             During the Data Processing and Analysis: Big Data course, I learnt how to explore a dataset,

@@ -157,7 +157,7 @@ function Middleware(props) {
                             Postman to carry out HTTP REST requests. After using the OneM2M standard many times as well as the OM2M open-soruce platform,
                             I feel like I am now capable of implementing a full sensor network, which is an primordial skill when working the IoT field.
                             As for the Cloud & Autonomic computing class, it was probably the most challenging course of this module for me because it relied a lot on theoretical approach.
-                            Having that much practice work was very useful to me, because we really took the time to explore the concepts with Openstack and Virtualbox and thus take in the main skills of the class.
+                            Having that much practice work was very useful to me, because we really took the time to explore the concepts with Openstack and Virtualbox and that allowed me to take in the main skills of the class.
 
                             <br /><br />
 

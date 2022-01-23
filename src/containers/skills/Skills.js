@@ -83,7 +83,7 @@ export default function Skills(props) {
               >
                 internship
               </NavLink>
-              page, presenting my main experiences
+              page, presenting my main professional experiences
 
             </li>
             <br />
@@ -116,7 +116,7 @@ export default function Skills(props) {
             field.
             <br />
             You can find below a table that summarizes the different courses of
-            this program.
+            this program.<br/><br/>
           </h1>
           <TableISS id='tab' />
         </Fade>

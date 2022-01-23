@@ -15,6 +15,10 @@
   display: block;
   margin-left: 34%;
 }
+
+.slide-super{
+  width: 30%;
+}
 /*
 .slide2 > * {
     max-width: 100%;

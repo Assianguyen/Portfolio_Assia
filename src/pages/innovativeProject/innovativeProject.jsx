@@ -8,6 +8,8 @@ import { link } from "glamor";
 import { NavBar, Nav, NavItem, Button, Modal, Row, Col } from 'react-bootstrap';
 import InnCourses from "../../components/skillMatrix/innCourses"
 import SkillMatrixInn from "../../components/skillMatrix/skillMatrixInn"
+import ReactPlayer from "react-player"
+
 
 
 
@@ -38,7 +40,7 @@ function InnovativeProject(props) {
                         </div>
 
                         <h1 className="course-header" style={{ color: theme.text }}>
-                            Innovative Project
+                            Innovative Project & Portfolio
                         </h1>
                         <h1 className="course-title" style={{ color: theme.accentColor }}>
                             Descriptive part
@@ -117,7 +119,7 @@ function InnovativeProject(props) {
                                     We also were able to retrieve the rover's position in real-time on a database with firebase. We used these data to display it on a webapp based on Mapbox. On that same map
                                     we could enter the fixed position of the base station so to have both the base an rover position on the same map.
                                     We also wrote a compleye state-of-the-art to explain the distance measurement method used by RTK systems in comparison
-                                    with other positionning methods (GPS and DGPS). <br/><br/>
+                                    with other positionning methods (GPS and DGPS). <br /><br />
                                 </Col>
                             </Row>
                             <div className="portfolio-hackster-btn-div">
@@ -130,19 +132,34 @@ function InnovativeProject(props) {
                                 </button>
                             </div>
                             <br /><br />
-                            <img
-                                className="map d-block mx-auto"
-                                src={require(`../../assests/images/map-rtk.png`)}
-                                alt=""
-                                style={{ width: "70%" }}
-                            />
-                            <h6 className='text-center'><i>Map interface to locate the base (blue) and the rover (red)</i></h6>
+                            <Row>
+                                <Col md={6}>
+                                    <img
+                                        className="map d-block mx-auto"
+                                        src={require(`../../assests/images/map-rtk.png`)}
+                                        alt=""
+                                        style={{ width: "100%"}}
+                                    />
+                                    <h6 className='text-center'><i>Map interface to locate the base (blue) and the rover (red)</i></h6>
+                                </Col>
+                                <Col md={6}>
+                                    <div className="">
+                                        <ReactPlayer url='https://www.youtube.com/watch?v=SnIFUUjsiBk'
+                                            playing='true'
+                                            controls='true'
+                                            width='100%'
+                                            height= '300px'
+                                        />
+                                    </div>
+                                </Col>
+                            </Row>
                         </h5>
+                        <br/><br/>
                         <h1 className="course-subtitle"> Portfolio  </h1>
                         <br />
                         <h5 className="course-text2">
                             At the end of the semester of ISS, we had to create a portfolio gathering all the training and experiences of the 5th year.
-                            You could either do a conventional document in electronic form or a website in any language. I figured it was a
+                            You could either do a conventional document in electronic form or a website in any language. I chose the latter because I figured it was a
                             great opportunity to do something that could be useful in my future and acquire new skills. I had
                             never done any web development, so I really started from scratch for this project.
                             <br /><br />
@@ -203,7 +220,7 @@ function InnovativeProject(props) {
                         <h1 className="course-text2" style={{ color: theme.text }}>
                             <br />
                             We can note that the expected skills in this module are more oriented towards resolution and soft skills.
-                            In retrospect, I gained many technical skills during these projects but I also acquired essentiel skills like project
+                            In retrospect, I gained many technical skills during these projects but I also acquired essential skills like project
                             management or report writing.
                             During the Innovative project, I assumed the role of coordinator, by reflecting on the different tasks to accomplish and
                             the middle-ground objectives and solutions. By doing so, I improved my communication skills as well a my work method.
@@ -212,7 +229,7 @@ function InnovativeProject(props) {
                             roaming functionnality with one rover connecting to several bases to expand the distance coverage.
                             I am really happy about how this project turned out, knowing how long we took making the kit enter the RTK mode.
                             The portfolio is also a big achievement for me, since I learned to code in React and  css. I am really satisfied with the result
-                            and feel like I have been able to not only present in detail my training, but also take up a step back to evaluate my curriculum.
+                            and feel like I have been able to not only present in detail my training, but also take a step back to evaluate my curriculum.
                             I tried to follow the document frame supplied on Moodle by defining 3 clear modes of demonstration: the descriptive part, the technical part and the
                             analytic part.
                             The skills matrix analyzing my acquired skills for this project can be found below: <br /><br />

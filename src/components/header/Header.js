@@ -111,7 +111,7 @@ function Header(props) {
                     <Dropdown.Item href="#/middleware">Middleware and Service</Dropdown.Item>
                     <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
                     <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
-                    <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
+                    <Dropdown.Item href="#/innovativeproject">Innovative project and portfolio</Dropdown.Item>
                     <Dropdown.Item href="#/innovation">Innovation and humanity</Dropdown.Item>
                   </ul>
                 </DropdownButton>
@@ -130,7 +130,7 @@ function Header(props) {
                     <Dropdown.Item href="#/middleware">Middleware and Service</Dropdown.Item>
                     <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
                     <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
-                    <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
+                    <Dropdown.Item href="#/innovativeproject">Innovative project and portfolio</Dropdown.Item>
                     <Dropdown.Item href="#/innovation">Innovation and humanity</Dropdown.Item>
                   </ul>
                 </DropdownButton>
@@ -149,7 +149,7 @@ function Header(props) {
                     <Dropdown.Item href="#/middleware">Middleware and Service</Dropdown.Item>
                     <Dropdown.Item href="#/data">Analysis and data processing</Dropdown.Item>
                     <Dropdown.Item href="#/hackathon/#D-hack">Hackathon</Dropdown.Item>
-                    <Dropdown.Item href="#/innovativeproject">Innovative project</Dropdown.Item>
+                    <Dropdown.Item href="#/innovativeproject">Innovative project and portfolio</Dropdown.Item>
                     <Dropdown.Item href="#/innovation">Innovation and humanity</Dropdown.Item>
                   </ul>
                 </DropdownButton>
@@ -200,9 +200,9 @@ function Header(props) {
                 Test
               </NavLink>
             </li> */}
-            <button {...styles} onClick={changeTheme}>
+            {/* <button {...styles} onClick={changeTheme}>
               {icon}
-            </button>
+            </button> */}
           </ul>
         </header>
       </div>

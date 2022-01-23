@@ -451,24 +451,24 @@ const experience = {
     "In this section I have uploaded the poster for my fourth year internship in a start up called Elements. I have also mentionned my current apprenticeship, at the automotive supplier, Vitesco.",
   header_image_path: "experience.svg",
   sections: [
-    // {
-    //   title: "Work",
-    //   experiences: [
-    //     {
-    //       title: "Full Stack Developer",
-    //       company: "Quicko",
-    //       company_url: "https://quicko.com/",
-    //       logo_path: "quicko.jpg",
-    //       duration: "June 2021 - October 2021",
-    //       location: "Ahmedabad",
-    //       description:
-    //         "Quicko is an online tax planning, preparation & filing platform for individuals & businesses.",
-    //       color: "#2962FF",
-    //     },
-    //   ],
-    // },
     {
-      title: "Internships",
+      title: "Apprenticeship",
+      experiences: [
+        {
+          title: "Development of wireless protocols",
+          company: "Vitesco",
+          company_url: " ",
+          logo_path: "vitesco.jpg",
+          duration: "from September 2021",
+          location: "Toulouse",
+          description:
+            "Apprenticeship revolving around the development of wireless protocols for keyfob localization",
+          color: "#0071C5",
+        },
+      ],
+    },
+    {
+      title: "Internship",
       experiences: [
         {
           title: "Conception & implementation of tools for r3Cell",
@@ -481,87 +481,8 @@ const experience = {
             "I designed 3 tools (a charger indicator, a discharger and a display system) for a lithium smart battery useful for every cycle of the battery's life",
           color: "#ee3c26",
         },
-        {
-          title: "Development of wireless protocols",
-          company: "Vitesco",
-          company_url: " ",
-          logo_path: "vitesco.jpg",
-          duration: "from September 2021",
-          location: "Toulouse",
-          description:
-            "Apprenticeship revolving around the development of wireless protocols for keyfob localization",
-          color: "#0071C5",
-        },
-        // {
-        //   title: "Web Developer",
-        //   company: "Wrighter Writing Solutions",
-        //   company_url: " ",
-        //   logo_path: "wrighter.jpg",
-        //   duration: "August 2020",
-        //   location: "",
-        //   description: "Develop a website using PHP and jQuery.",
-        //   color: "#56A4D3",
-        // },
-        // {
-        //   title: "Front-End Developer",
-        //   company: "VJ TechServe",
-        //   company_url: " ",
-        //   logo_path: "vjt.png",
-        //   duration: "September 2020",
-        //   location: "",
-        //   description: "Develop a portfolio website using ReactJS",
-        //   color: "#800000",
-        // },
       ],
     },
-    // {
-    //   title: "Volunteerships",
-    //   experiences: [
-    //     {
-    //       title: "Google Summer of Code Mentor",
-    //       company: "Sugar Labs / GSoC",
-    //       company_url: "https://sugarlabs.org/",
-    //       logo_path: "google_logo.png",
-    //       duration: "Summer of 2017 / 18 / 20",
-    //       location: " ",
-    //       description:
-    //         "Mentorship responsibilities were to help students plan the project, review issues and pull requests, ensure smooth progress and help them out when they are stuck.",
-    //       color: "#4285F4",
-    //     },
-    //     {
-    //       title: "Google Code-In Mentor",
-    //       company: "Sugar Labs / GSoC",
-    //       company_url: "https://sugarlabs.org/",
-    //       logo_path: "google_logo.png",
-    //       duration: "Winter of 2017 / 18 / 19",
-    //       location: " ",
-    //       description:
-    //         "Day to day resposibilites of this mentorship was to help out children aged 13-17 get started with programming and open-source, review their work and approve them.",
-    //       color: "#D83B01",
-    //     },
-    //     {
-    //       title: "Board Member at Codeuino",
-    //       company: " ",
-    //       company_url: " ",
-    //       logo_path: "codeuino.jpg",
-    //       duration: "2018 - 2019",
-    //       location: " ",
-    //       description: "Previous Board during early days of Codeuino",
-    //       color: "#D83B01",
-    //     },
-    //     {
-    //       title: "BluWings Club",
-    //       company: " ",
-    //       company_url: " ",
-    //       logo_path: "b.png",
-    //       duration: "2018 - On Going",
-    //       location: " ",
-    //       description:
-    //         "Co-Founder and President of the programming club called BluWings. Have organized several workshops which introduced programming and related tools to freshers.",
-    //       color: "#D83B01",
-    //     },
-    //   ],
-    // },
   ],
 };
 

@@ -19,7 +19,7 @@ function ComCourses(props) {
                         <th ><span>Protocols for connected objects</span></th>
                         <th >Lectures about main protocols for IoT, 
                             built around presentations made by students.
-                            Focus on the different MAC layers for IoT. and their characteristics.
+                            Focus on the different MAC layer protocols for IoT and their characteristics.
                             This class was followed by a segment about the evolution of mobile networks
                              from 3G to 6G also built around student presentations. 
 
